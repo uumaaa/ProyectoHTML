@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: F9E0D9;
+    box-sizing: content-box;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -16,6 +24,8 @@ li a, .BotonAsesorias, .BotonProyectos{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: rgb(128, 0, 74);
+    border-radius: 10%;
 }
 /* */
 li a:hover, .MenuAsesorias:hover .BotonAsesorias, .MenuProyectos:hover .BotonProyectos
@@ -58,6 +68,7 @@ li a:hover, .ContenidoAsesorias:hover .BotonAsesorias, .ContenidoProyectos:hober
         margin-top: 8px;
         margin-right: 16px;
         font-size: 17px;
+        border-radius: 3%;
 }
 
 .Registrarme, .IniciarSesion{

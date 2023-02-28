@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/LoginRegister.css">
+
+    <title>Cuenta</title>
+
+</head>
+<body>
+    <main>
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                </div>
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Matricula" required>
+                    <input type="password" class="input-field" placeholder="Contraseña" required>
+                    <input type="checkbox" class="check-box"><span>Guardar contraseña en este dispositivo</span>
+                    <button type="submit" class="submit-btn">Iniciar sesión</button>
+                </form>
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="Matricula" required>
+                    <input type="email" class="input-field" placeholder="Correo electronico" required>
+                    <input type="text" class="input-field" placeholder="Usuario" required>
+                    <input type="password" class="input-field" placeholder="Contraseña" required>
+                    <input type="password" class="input-field" placeholder="Repite tu contraseña" required>
+                    <input type="checkbox" class="check-box"><span>Acepto los términos y condiciones</span>
+                    <button type="submit" class="submit-btn">Registro</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/Form.js"></script>
+</body>
+</html>
