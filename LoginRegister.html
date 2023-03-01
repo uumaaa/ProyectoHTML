@@ -5,18 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/LoginRegister.css">
-
     <title>Cuenta</title>
 
 </head>
 <body>
     <main>
-        <div id="login-form" class="login-page">
             <div class="form-box">
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
-                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                    <button type="button" onclick="login()" class="toggle-btn" id="BotonInicio">Inicio</button>
+                    <button type="button" onclick="register()" class="toggle-btn" id="BotonRegistro">Registro</button>
                 </div>
                 <form id="login" class="input-group-login">
                     <input type="text" class="input-field" placeholder="Matricula" required>
@@ -34,7 +32,6 @@
                     <button type="submit" class="submit-btn">Registro</button>
                 </form>
             </div>
-        </div>
     </main>
     <script src="scripts/Form.js"></script>
 </body>
