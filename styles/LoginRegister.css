@@ -10,10 +10,11 @@ body {
 }
 .form-box
 {
+
     width:380px;
 	height:480px;
 	position:absolute;
-	margin:2% auto;
+	margin:2% 60% 0%;
 	background:#F2FDfF;
 	padding:10px;
     overflow: hidden;
@@ -66,10 +67,6 @@ body {
 	width: 100%;
 	padding:10px 0;
 	margin:5px 0;
-	border-left:0;
-	border-top:0;
-	border-right:0;
-	border-bottom: 1px solid #000;
 	outline:none;
 	background: transparent;
 }
@@ -87,7 +84,17 @@ body {
 }
 .check-box
 {
-	margin: 30px 10px 34px 0;
+  background-color: #fff;
+  margin: 30px 10px 24px 0;
+  height: 20px;
+  width: 20px;
+  appearance: none;
+  border: 2px solid #80004a;
+  transition: all 0.3s ease-in-out;
+}
+.check-box:checked
+{
+	background-color: #80004a;
 }
 span
 {
