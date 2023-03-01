@@ -13,8 +13,8 @@ body {
 
     width:380px;
 	height:480px;
-	position:absolute;
-	margin:2% 60% 0%;
+margin: 20% auto;
+	position: absolute;
 	background:#F2FDfF;
 	padding:10px;
     overflow: hidden;
