@@ -19,17 +19,17 @@
                 <form id="login" class="input-group-login">
                     <input type="text" class="input-field" placeholder="Matricula" required>
                     <input type="password" class="input-field" placeholder="Contraseña" required>
-                    <input type="checkbox" class="check-box"><span>Mantener sesión iniciada</span>
+                    <input type="checkbox" class="check-box"><span class="TextoExtra">Mantener sesión iniciada</span>
                     <button type="submit" class="submit-btn">Iniciar sesión</button>
                 </form>
                 <form id="register" class="input-group-register">
-                    <input type="text" class="input-field" placeholder="Matricula" required>
-                    <input type="email" class="input-field" placeholder="Correo electronico" required>
-                    <input type="text" class="input-field" placeholder="Usuario" required>
-                    <input type="password" class="input-field" placeholder="Contraseña" required>
-                    <input type="password" class="input-field" placeholder="Repite tu contraseña" required>
-                    <input type="checkbox" class="check-box"><span>Acepto los términos y condiciones</span>
-                    <button type="submit" class="submit-btn">Registro</button>
+                    <input type="text" class="input-field" placeholder="Matricula" id="Matricula" required>
+                    <input type="email" class="input-field" placeholder="Correo electronico" id="CorroeElec" required>
+                    <input type="text" class="input-field" placeholder="Usuario" id="Usuario" required>
+                    <input type="password" class="input-field" placeholder="Contraseña" id="Contrasena" required>
+                    <input type="password" class="input-field" placeholder="Repite tu contraseña" id="SegundaContra" required>
+                    <input type="checkbox" class="check-box"><span class="TextoExtra">Acepto los términos y condiciones</span>
+                    <button type="submit" class="submit-btn" onclick="validacionRegistro()">Registrarse</button>
                 </form>
             </div>
     </main>
