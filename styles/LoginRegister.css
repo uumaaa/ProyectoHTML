@@ -16,19 +16,20 @@ body {
 {
     width:29%;
 	min-width: 380px;
-	min-height: 520px;
+	min-height: 380px;
 	position:relative;
 	margin:5% auto;
 	background:#F2FDfF;
 	padding:10px;
     overflow: hidden;
-  border-radius: 50px;
+  	border-radius: 50px;
+  	transition: 0.5s;
 }
 .button-box
 {
 	min-width:220px;
 	min-height: 35px;
-	height: 10%;
+	height: 45px;
 	width:60%;
 	margin:10% auto;
 	position:relative;
@@ -81,8 +82,10 @@ body {
 	outline:2px solid transparent;
 	background-color: #F9EAE1;
 	color: white; 
+	border: 3px solid #F9EAE1;
 	border-radius: 10px;
 	outline-offset: 2px;
+	transition: 0.5s;
 }
 .input-field::placeholder{
 	color: #80004a;
@@ -102,8 +105,8 @@ body {
 .check-box
 {
   background-color: #F2FDfF;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 6%;
+  margin-bottom: 6%;
   margin-right: 5%;
   min-height: 25px;
   min-width: 25px;

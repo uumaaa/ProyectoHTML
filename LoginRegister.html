@@ -10,21 +10,21 @@
 </head>
 <body>
     <main>
-            <div class="form-box">
+            <div class="form-box" id="CajaFormulario">
                 <div class="button-box">
                     <div id="btn"></div>
                     <button type="button" onclick="login()" class="toggle-btn" id="BotonInicio">Inicio</button>
                     <button type="button" onclick="register()" class="toggle-btn" id="BotonRegistro">Registro</button>
                 </div>
-                <form id="login" class="input-group-login">
+                <form id="login" class="input-group-login" name="formularioInicio">
                     <input type="text" class="input-field" placeholder="Matricula" required>
                     <input type="password" class="input-field" placeholder="Contraseña" required>
                     <input type="checkbox" class="check-box"><span class="TextoExtra">Mantener sesión iniciada</span>
                     <button type="submit" class="submit-btn">Iniciar sesión</button>
                 </form>
-                <form id="register" class="input-group-register">
+                <form id="register" class="input-group-register" name="formularioRegistro">
                     <input type="text" class="input-field" placeholder="Matricula" id="Matricula" required>
-                    <input type="email" class="input-field" placeholder="Correo electronico" id="CorroeElec" required>
+                    <input type="email" class="input-field" placeholder="Correo electronico" id="CorreoElec" required>
                     <input type="text" class="input-field" placeholder="Usuario" id="Usuario" required>
                     <input type="password" class="input-field" placeholder="Contraseña" id="Contrasena" required>
                     <input type="password" class="input-field" placeholder="Repite tu contraseña" id="SegundaContra" required>
