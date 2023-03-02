@@ -38,17 +38,14 @@ function validacionRegistro() {
         Correo.style.borderColor = "#80004a";
     else
         Correo.style.borderColor = "#F9EAE1";
-
     if (Usuario.value == "")
         Usuario.style.borderColor = "#80004a";
     else
         Usuario.style.borderColor = "#F9EAE1";
-
-    if (Contrasena.value == "")
+        if (Contrasena.value == "")
         Contrasena.style.borderColor = "#80004a";
     else
         Contrasena.style.borderColor = "#F9EAE1";
-
     if (Contrasena2.value == "")
         Contrasena2.style.borderColor = "#80004a";
     else
@@ -64,5 +61,14 @@ function validacionRegistro() {
     }
 }
 function validacionInicio(){
-    
+    var Matricula = document.getElementById("MatriculaI");
+    var Contrasena = document.getElementById("ContrasenaI");
+    if (Contrasena.value == "")
+    Contrasena.style.borderColor = "#80004a";
+else
+    Contrasena.style.borderColor = "#F9EAE1";
+    if (Matricula.value == "")
+    Matricula.style.borderColor = "#80004a";
+else
+    Matricula.style.borderColor = "#F9EAE1";
 }
