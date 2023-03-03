@@ -5,31 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/LoginRegister.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <title>Cuenta</title>
 
 </head>
 <body>
     <main>
-            <div class="form-box">
+            <div class="form-box" id="CajaFormulario">
                 <div class="button-box">
                     <div id="btn"></div>
                     <button type="button" onclick="login()" class="toggle-btn" id="BotonInicio">Inicio</button>
                     <button type="button" onclick="register()" class="toggle-btn" id="BotonRegistro">Registro</button>
                 </div>
-                <form id="login" class="input-group-login">
-                    <input type="text" class="input-field" placeholder="Matricula" required>
-                    <input type="password" class="input-field" placeholder="Contraseña" required>
-                    <input type="checkbox" class="check-box"><span>Mantener sesión iniciada</span>
-                    <button type="submit" class="submit-btn">Iniciar sesión</button>
+                <form id="login" class="input-group-login" name="formularioInicio">
+                    <input type="text" class="input-field" placeholder="Matricula" id="MatriculaI" required>
+                    <input type="password" class="input-field" placeholder="Contraseña" id="ContrasenaI" required>
+                    <input type="checkbox" class="check-box"><span class="TextoExtra">Mantener sesión iniciada</span>
+                    <button type="submit" class="submit-btn" onclick="validacionInicio()">Iniciar sesión</button>
                 </form>
-                <form id="register" class="input-group-register">
-                    <input type="text" class="input-field" placeholder="Matricula" required>
-                    <input type="email" class="input-field" placeholder="Correo electronico" required>
-                    <input type="text" class="input-field" placeholder="Usuario" required>
-                    <input type="password" class="input-field" placeholder="Contraseña" required>
-                    <input type="password" class="input-field" placeholder="Repite tu contraseña" required>
-                    <input type="checkbox" class="check-box"><span>Acepto los términos y condiciones</span>
-                    <button type="submit" class="submit-btn">Registro</button>
+                <form id="register" class="input-group-register" name="formularioRegistro">
+                    <input type="text" class="input-field" placeholder="Matricula" id="Matricula" required>
+                    <input type="email" class="input-field" placeholder="Correo electronico" id="CorreoElec" required>
+                    <input type="text" class="input-field" placeholder="Usuario" id="Usuario" required>
+                    <input type="password" class="input-field" placeholder="Contraseña" id="Contrasena" required>
+                    <input type="password" class="input-field" placeholder="Repite tu contraseña" id="SegundaContra" required>
+                    <input type="checkbox" class="check-box"><span class="TextoExtra">Acepto los términos y condiciones</span>
+                    <button type="submit" class="submit-btn" onclick="validacionRegistro()">Registrarse</button>
                 </form>
             </div>
     </main>
