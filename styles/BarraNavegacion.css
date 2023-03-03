@@ -1,11 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-body {
-    background-color: F9E0D9;
-    box-sizing: content-box;
-}
 ul {
     list-style-type: none;
     margin: 0;
@@ -39,7 +31,7 @@ li .MenuAsesorias{
     display: none;
   position: absolute;
   background-color: rgb(128, 0, 74);
-  min-width: 160px;
+  min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
