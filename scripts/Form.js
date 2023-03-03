@@ -7,7 +7,7 @@ function register() {
     formularioInicio.style.left = "-600px";
     formularioRegistro.style.left = "46px";
     botonMovil.style.left = "50%";
-    document.getElementById("CajaFormulario").style.height = "540px";
+    document.getElementById("CajaFormulario").style.height = "520px";
     setTimeout(() => {
         document.getElementById("BotonInicio").style.color = "#80004a";
         document.getElementById("BotonRegistro").style.color = "#F9EAE1";
