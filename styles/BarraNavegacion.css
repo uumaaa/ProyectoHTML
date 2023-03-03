@@ -1,4 +1,4 @@
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,12 +6,12 @@ ul {
     background-color: rgb(128, 0, 74);
 }
 
-li {
+nav li {
     float: left;
     padding: 0 5px;
 }
 
-li a,
+nav li a,
 .BotonAsesorias,
 .BotonProyectos,
 .BotonSesion {
@@ -23,15 +23,15 @@ li a,
     background-color: #80004a;
 }
 
-li a:hover,
+nav li a:hover,
 .MenuAsesorias:hover .BotonAsesorias,
 .MenuProyectos:hover .BotonProyectos .MenuSesion:hover .BotonSesion {
     background-color: #570033;
 }
 
-li .MenuAsesorias,
-li .MenuProyectos,
-li .MenuSesion {
+nav li .MenuAsesorias,
+nav li .MenuProyectos,
+nav li .MenuSesion {
     display: inline-block;
 }
 .ContenidoAsesorias,
@@ -69,11 +69,11 @@ li .MenuSesion {
 .ContenidoSesion{
     right: 2px;
 }
-.MenuSesion{
+.Derecha{
     float: right;
 }
 
-li a:hover,
+nav li a:hover,
 .ContenidoAsesorias:hover .BotonAsesorias,
 .ContenidoProyectos:hover .BotonProyectos,
 .ContenidoSesion:hover .BotonSesion {
