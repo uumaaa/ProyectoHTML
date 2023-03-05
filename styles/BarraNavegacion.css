@@ -34,18 +34,20 @@ nav li .MenuProyectos,
 nav li .MenuSesion {
     display: inline-block;
 }
+
 .ContenidoAsesorias,
 .ContenidoProyectos,
 .ContenidoSesion {
     display: none;
     position: absolute;
     background-color: #80004a;
-    min-width: 15%;
+    min-width: 14%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-
 }
-
+.ContenidoSesion{
+    position: relative;
+}
 .ContenidoAsesorias a,
 .ContenidoProyectos a,
 .ContenidoSesion a {
@@ -63,14 +65,14 @@ nav li .MenuSesion {
 }
 
 .MenuAsesorias:hover .ContenidoAsesorias,
-.MenuProyectos:hover .ContenidoProyectos, .MenuSesion:hover .ContenidoSesion {
+.MenuProyectos:hover .ContenidoProyectos,
+.MenuSesion:hover .ContenidoSesion {
     display: block;
 }
-.ContenidoSesion{
-    right: 2px;
-}
-.Derecha{
-    float: right;
+
+.Derecha {
+    position: absolute;
+    right: 0;
 }
 
 nav li a:hover,
@@ -79,23 +81,28 @@ nav li a:hover,
 .ContenidoSesion:hover .BotonSesion {
     background-color: #570033;
 }
-.BarraBusqueda{
-position: relative;
-left: 20.2%;
-}
-.Entrada{
-    width: 75%;
-    height: 40px;	padding:10px;
 
-	margin: 5px 0;
-	background-color: #F9EAE1;
-	color: #80004a; 
-	border: 3px solid #F9EAE1;
-	border-radius: 10px;;
+.BarraBusqueda {
+    position: relative;
+    left: 20.2%;
 }
-.BotonBusqueda{
+
+.Entrada {
+    width: 75%;
+    height: 40px;
+    padding: 10px;
+
+    margin: 5px 0;
+    background-color: #F9EAE1;
+    color: #80004a;
     border: 3px solid #F9EAE1;
-    color:#F9EAE1;
+    border-radius: 10px;
+    ;
+}
+
+.BotonBusqueda {
+    border: 3px solid #F9EAE1;
+    color: #F9EAE1;
     background-color: #80004a;
     border-radius: 10px;
     width: 20%;
