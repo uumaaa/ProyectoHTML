@@ -17,9 +17,17 @@ body {
   to {transform: scale(1)}
 }
 .Creditos{
-  font-size: 20;
+  font-size: 15px;
   text-align: right;
   color: #F9EAE1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.CreditosRojo{
+  font-size: 15px;
+  text-align: right;
+ color: #80004a;
   position: absolute;
   bottom: 0px;
   right: 0px;

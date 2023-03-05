@@ -47,18 +47,27 @@
                 </li>
             </ul>
         </nav>
-        <h1>Matemáticas Discretas</h1>
     </header>
-    <img src="/images/no-video-img.png" alt="" class="Imagen2">
+    <div class="ContenedorVideo"> 
+        <img src="/images/no-video-img.png" alt="" class="Imagen2">
+        <p class="TituloVideo">Algorimo de Dijkstra - Práctica</p>
+        <img src="/images/MtraSilvia.avif" class="Canal" alt="">
+        <p class="NombreCanal">Maestra Rubí</p>
+        <div class="Extras">
+            <p>15 visitas</p>
+            <p>5 likes</p>
+        </div>
+    </div>
     <div class="MostrarTemario">
         <p>Temario</p>
-        <div class="IntermedioBotones"> 
-            <div id="BotonFalso"></div><button id="BotonMostrarTemario"></button>
-            <button id="BotonNoMostrarTemario"></button>
+        <div class="IntermedioBotones">
+            <div id="BotonFalsoTemario"></div>
+            <button id="BotonMostrarTemario" onclick="OcultarTemario()"></button>
+            <button id="BotonNoMostrarTemario" onclick="MostrarTemario()"></button>
         </div>
 
     </div>
-    <article class="Temario">
+    <article class="Temario" id="Temario">
         <h2>Temario</h2>
         <section id="logica">
             <h3>Lógica</h3>
@@ -80,12 +89,16 @@
                 computación, la optimización y la teoría de redes.</p>
         </section>
     </article>
-    <div class="MostrarMejora">
+    <div class="MostrarMejora" id="BloqueMostrarMejora">
         <p>Tips</p>
-        <button id="BotonMostrarMejora"></button>
-        <button id="BotonNoMostrarMejora"></button>
+        <div class="IntermedioBotones">
+            <div id="BotonFalsoMejora" id="BotonFalsoMejora"></div>
+            <button id="BotonMostrarMejora" onclick="OcultarMejora()"></button>
+            <button id="BotonNoMostrarMejora" onclick="MostrarMejora()"></button>
+        </div>
+
     </div>
-    <aside class="MejorarMD">
+    <aside class="Mejorar" id="Mejorar">
         <h2>Cómo mejorar el estudio de las Matemáticas Discretas</h2>
         <ul>
             <li>Practicar con ejercicios y problemas de diferentes fuentes, como libros de texto, sitios web y
@@ -96,10 +109,10 @@
             <li>Asistir a conferencias y charlas sobre temas relacionados con las matemáticas discretas.</li>
         </ul>
     </aside>
-    <footer>
+    <footer class="CreditosRojo">
         <p>3 de marzo de 2023.</p>
         <p>© Todos los derechos reservados.</p>
     </footer>
+    <script src="/scripts/TemarioMejora.js"></script>
 </body>
-
 </html>
