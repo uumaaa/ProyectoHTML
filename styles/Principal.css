@@ -1,0 +1,119 @@
+
+.Titulo {
+    font-size: 70px;
+    width:15ch; 
+    margin-top: 70px;
+    margin-left: 100px;
+    color: #80004a;
+    font-family: "PoppinsBold";
+}
+.Texto {
+    font-size: 28px;
+    width: 30ch;
+    margin-left: 100px;
+    color: #80004a;
+}
+.ContenidoFondo{
+    padding: 5px auto;
+}
+.Imagen{
+    width: 40%;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 130px;
+    right: 100px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.664);
+}
+.Imagen2{
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 170px;
+    right: 100px;
+    border-radius: 100px;
+}
+.BotonCurso2{
+    height: 70px;
+    width: 150px;
+    background-color: #F9EAE1;
+    border: 5px solid #80004a;
+    color: #80004a;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "PoppinsBold";
+    cursor: pointer;
+}
+.BotonAyuda{
+    height: 70px;
+    width: 300px;
+    background-color: #80004a;
+    color:#F9EAE1 ;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "PoppinsBold";
+    cursor: pointer;
+}
+.Botones{
+    margin-left:100px;
+    margin-top: 50px;
+}
+.ComoAyudar{
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.ContenidoAyuda{
+    margin: auto;
+    display: block;
+    width: 40%;
+    height: 50%;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    color: #80004a;
+    background-color: #F9EAE1;
+    padding: 0 5%;
+    border: 10px solid #80004a;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.664);
+}
+.ContenidoAyuda h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-family: "PoppinsBold";
+}
+  .Cerrar {
+    position: absolute;
+    top:9%;
+    right: 28%;
+    color: #80004a;
+    font-size: 40px;
+    font-weight: bold;
+    animation-duration: 0.6s;
+  }
+  
+  .Cerrar:hover,
+  .Cerrar:focus {
+    color: #5a0035;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .EntradaAyuda {
+    width: 75%;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #F9EAE1;
+    color: #80004a;
+    border: 3px solid #80004a;
+    border-radius: 10px;
+    ;
+}

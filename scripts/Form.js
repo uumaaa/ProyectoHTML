@@ -56,8 +56,14 @@ function validacionRegistro() {
         Contrasena.style.borderColor = "#80004a";
     }
     else{
-        Contrasena2.style.borderColor = "#F9EAE1";
-        Contrasena.style.borderColor = "#F9EAE1";
+        if(Contrasena.value == "" && Contrasena2.value == ""){
+            Contrasena2.style.borderColor = "#80004a";
+            Contrasena.style.borderColor = "#80004a";
+        }
+        else{
+            Contrasena2.style.borderColor = "#F9EAE1";
+            Contrasena.style.borderColor = "#F9EAE1";
+        }
     }
 }
 function validacionInicio(){

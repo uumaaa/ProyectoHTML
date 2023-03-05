@@ -1,5 +1,5 @@
-var paginaImportancia = document.getElementById("Importancia");
-var BotonImportancia = document.getElementById("BotonImportancia");
+var paginaImportancia = document.getElementById("ComoAyudar");
+var BotonImportancia = document.getElementById("BotonAyuda");
 BotonImportancia.onclick = function(){
   paginaImportancia.style.display = "block";
 }

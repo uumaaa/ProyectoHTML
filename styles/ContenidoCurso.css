@@ -1,0 +1,83 @@
+.Imagen2{
+    width: 60%;
+    position: absolute;
+    left: 5%;
+    border-radius: 20px;
+}
+.Temario{
+    background-color: #FF5A5F;
+    position: absolute;
+    top: 120px;
+    width: 27.5%;
+    height: 250px;
+    overflow: auto;
+    right: 2.5%;
+    border-radius: 20px;
+}
+.MejorarMD{
+    position: absolute;
+    top: 60%;
+    width: 27.5%;
+    right: 2.5%;
+    background-color: #8075FF;
+    border-radius: 20px;
+}
+.MostrarTemario{
+    position: absolute;
+    right: 2.5%;
+    background-color: #FF5A5F;
+    height: 40px;
+    width: 27.5%;
+    border-radius: 20px;
+}
+.Mo
+#BotonMostrarTemario{
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -42px;
+    right: -7px;
+    border-radius: 10px;
+}
+#BotonNoMostrarTemario{
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    top: -42px;
+    position: relative;
+    cursor: pointer;
+}
+#BotonFalso{
+    background-color: #80004a;
+    border: 2px solid #80004a;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    top: -7px;
+    right: -7px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.MostrarMejora{
+    position: absolute;
+    right: 2.5%;
+    background-color: #8075FF;
+    height: 40px;
+    width: 27.5%;
+    top: 53.5%;
+    border-radius: 20px;
+}
+.IntermedioBotones{
+    margin-top: 6px;
+    position: relative;
+    left: 65%;
+    top: -50%;
+    border-radius: 10px;
+    width: 80px;
+    align-content: center;
+    height: 20px;
+    background-color: #F9EAE1;
+}
