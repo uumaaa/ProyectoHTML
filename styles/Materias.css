@@ -1,0 +1,111 @@
+.ContenedorMaterias {
+    margin-top: 6em;
+    padding: 2em;
+    display: flex;
+}
+
+.MateriaA,
+.MateriaMD,
+.MateriaCD,
+.MateriaCI,
+.MateriaPE {
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 300px;
+    width: 200px;
+    flex: 1;
+    transition: 0.3s all ease;
+    text-align: center;
+    overflow: none;
+}
+
+.MateriaA img,
+.MateriaMD img,
+.MateriaCD img,
+.MateriaCI img,
+.MateriaPE img {
+    border-radius: 20px;
+    padding: 2%;
+    width:98%;
+    height: 300px;
+    object-fit: cover;
+    flex: 1;
+    transition: 0.3s all ease;
+    overflow: none;
+}
+
+.MateriaA:hover {
+    flex: 1.8;
+    height: 300px;
+    background-color: darkkhaki;
+    color: white;
+}
+
+.MateriaMD:hover {
+    flex: 1.8;
+    height: 300px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.MateriaMD:hover .TextoTarjetas,
+.MateriaA:hover .TextoTarjetas,
+.MateriaCI:hover .TextoTarjetas,
+.MateriaCD:hover .TextoTarjetas,
+.MateriaPE:hover .TextoTarjetas {
+    height: 200px;
+    top: -206px;
+}
+
+.MateriaMD:hover .TextoTarjetas p,
+.MateriaA:hover .TextoTarjetas p,
+.MateriaCI:hover .TextoTarjetas p,
+.MateriaCD:hover .TextoTarjetas p,
+.MateriaPE:hover .TextoTarjetas p {
+    visibility: visible;
+    width: 100%;
+}
+
+.MateriaCI:hover {
+    flex: 1.8;
+    height: 300px;
+    background-color: orange;
+    color: white;
+}
+
+.MateriaCD:hover {
+    flex: 1.8;
+    height: 300px;
+    background-color: red;
+    color: white;
+}
+
+.MateriaPE:hover {
+    flex: 1.8;
+    height: 300px;
+    background-color: blue;
+    color: white;
+}
+
+.TextoTarjetas a {
+    color: white;
+    text-decoration: none;
+}
+
+.TextoTarjetas {
+    color: white;
+    position: relative;
+    width: ;
+    padding: 0 5%;
+    height: 22px;
+    top: -20px;
+    background-color: rgba(0, 0, 0, .75);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s;
+}
+
+.TextoTarjetas p {
+    visibility: hidden;
+    font-size: 14px;
+}
