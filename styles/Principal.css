@@ -1,6 +1,6 @@
 
 .Titulo {
-    font-size: 70px;
+    font-size: 10vh;
     width:15ch; 
     margin-top: 70px;
     margin-left: 100px;
@@ -8,7 +8,7 @@
     font-family: "PoppinsBold";
 }
 .Texto {
-    font-size: 28px;
+    font-size: 5vh;
     width: 30ch;
     margin-left: 100px;
     color: #80004a;
@@ -17,8 +17,8 @@
     padding: 5px auto;
 }
 .Imagen{
-    width: 40%;
-    height: 400px;
+    width: 40vw;
+    height: 55vh;
     object-fit: cover;
     position: absolute;
     top: 130px;
@@ -27,11 +27,11 @@
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.664);
 }
 .Imagen2{
-    height: 300px;
+    height: 20vw;
     object-fit: cover;
     position: absolute;
-    top: 170px;
-    right: 100px;
+    top: 25%;
+    right: 5%;
     border-radius: 100px;
 }
 .BotonCurso2{
@@ -97,6 +97,7 @@
     font-size: 40px;
     font-weight: bold;
     animation-duration: 0.6s;
+    animation-name: zoom;
   }
   
   .Cerrar:hover,

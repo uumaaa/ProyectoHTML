@@ -1,0 +1,3 @@
+edad:¿Cuántos años tiene Juan?:30
+suma:Si x + y = 10 y x - y = 2, ¿cuál es el valor de x?:6
+ecuacion:Resuelve la ecuación 2x + 5 = 13:4

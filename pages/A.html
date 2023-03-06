@@ -1,45 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/extras.css">
+    <link rel="stylesheet" href="../styles/BarraNavegacion.css">
+    <link rel="stylesheet" href="../styles/ContenidoCurso.css">
     <title>Álgebra</title>
 </head>
 
 <body>
     <header>
-        <h1>Álgebra</h1>
+        <nav>
+            <ul>
+                <li>
+                    <img src="../images/9824b3e4-ff33-11e9-9853-0231b47980f0.jpeg" alt="Logo IPN" title="Logo IPN"
+                        width="40" height="40" class="LogoIPN">
+                </li>
+                <li class="MenuAsesorias">
+                    <a href="#" class="BotonAsesorias">Cursos</a>
+                    <div class="ContenidoAsesorias">
+                        <a href="../pages/area_matematica.html">Área matemática</a>
+                        <a href="#">Área electrónica</a>
+                        <a href="#">Área social</a>
+                    </div>
+                </li>
+                <li class="MenuProyectos">
+                    <a href="#" class="BotonProyectos">Proyectos</a>
+                    <div class="ContenidoProyectos">
+                        <a href="#">Proyectos en curso</a>
+                        <a href="#">Proyectos terminados</a>
+                        <a href="#">¡Quiero ayudar!</a>
+                    </div>
+                </li>
+                <li class="BarraBusqueda">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Buscar curso" class="Entrada">
+                        <input type="submit" class="BotonBusqueda" value="Buscar">
+                    </form>
+                </li>
+                <li class="Derecha">
+                    <a href="../index.html">Principal</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#ecuaciones">Ecuaciones y sistemas de ecuaciones</a></li>
-            <li><a href="#matrices">Matrices y determinantes</a></li>
-            <li><a href="#espacios">Espacios vectoriales</a></li>
-        </ul>
-    </nav>
-    <article>
+    <div class="ContenedorVideo"> 
+        <img src="../images/no-video-img.png" alt="" class="Imagen2">
+        <p class="TituloVideo">Sistemas de ecuaciones (teoría)</p>
+        <img src="../images/MtraSilvia.avif" class="Canal" alt="">
+        <p class="NombreCanal">Maestro Chifu</p>
+        <div class="Extras">
+            <p>20000 visitas</p>
+            <p>10k likes</p>
+        </div>
+    </div>
+    <div class="MostrarTemario">
+        <p>Temario</p>
+        <div class="IntermedioBotones">
+            <div id="BotonFalsoTemario"></div>
+            <button id="BotonMostrarTemario" onclick="OcultarTemario()"></button>
+            <button id="BotonNoMostrarTemario" onclick="MostrarTemario()"></button>
+        </div>
+    </div>
+    <article class="Temario" id="Temario">
+        <h2>Temario</h2>
         <section id="ecuaciones">
-            <h2>Ecuaciones y sistemas de ecuaciones</h2>
+            <h3>Ecuaciones y sistemas de ecuaciones</h3>
             <p>Las ecuaciones y sistemas de ecuaciones son objetos fundamentales del álgebra. En matemáticas, se
                 estudian las propiedades de estas estructuras y se desarrollan técnicas para resolver problemas que
                 involucran ecuaciones y sistemas de ecuaciones.</p>
         </section>
         <section id="matrices">
-            <h2>Matrices y determinantes</h2>
+            <h3>Matrices y determinantes</h3>
             <p>Las matrices y los determinantes son herramientas importantes del álgebra lineal. En matemáticas, se
                 estudian las propiedades de estas estructuras y se desarrollan técnicas para resolver problemas que
                 involucran matrices y determinantes.</p>
         </section>
         <section id="espacios">
-            <h2>Espacios vectoriales</h2>
+            <h3>Espacios vectoriales</h3>
             <p>Los espacios vectoriales son una generalización de los conceptos de vectores y sistemas de ecuaciones. En
                 matemáticas, se estudian las propiedades de estos espacios y se desarrollan técnicas para resolver
                 problemas que involucran transformaciones lineales y aplicaciones de los espacios vectoriales.</p>
         </section>
     </article>
-    <aside>
+    <div class="MostrarMejora" id="BloqueMostrarMejora">
+        <p>Tips</p>
+        <div class="IntermedioBotones">
+            <div id="BotonFalsoMejora"></div>
+            <button id="BotonMostrarMejora" onclick="OcultarMejora()"></button>
+            <button id="BotonNoMostrarMejora" onclick="MostrarMejora()"></button>
+        </div>
+    </div>
+    <aside class="Mejorar" id="Mejorar">
         <h2>Cómo mejorar el estudio del Álgebra</h2>
         <ul>
             <li>Comprender bien los conceptos básicos del álgebra, como las propiedades de las operaciones aritméticas y
@@ -51,10 +107,11 @@
                 matrices y transformaciones lineales.</li>
         </ul>
     </aside>
-    <footer>
+    <footer class="CreditosRojo">
         <p>3 de marzo de 2023.</p>
         <p>© Todos los derechos reservados.</p>
     </footer>
+    <script src="../scripts/TemarioMejora.js"></script>
 </body>
 
 </html>

@@ -1,53 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probabilidad y Estadística</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/extras.css">
+    <link rel="stylesheet" href="../styles/BarraNavegacion.css">
+    <link rel="stylesheet" href="../styles/ContenidoCurso.css">
+    <title>Probabilidad y estadística</title>
 </head>
 
 <body>
     <header>
-        <h1>Probabilidad y Estadística</h1>
+        <nav>
+            <ul>
+                <li>
+                    <img src="../images/9824b3e4-ff33-11e9-9853-0231b47980f0.jpeg" alt="Logo IPN" title="Logo IPN"
+                        width="40" height="40" class="LogoIPN">
+                </li>
+                <li class="MenuAsesorias">
+                    <a href="#" class="BotonAsesorias">Cursos</a>
+                    <div class="ContenidoAsesorias">
+                        <a href="../pages/area_matematica.html">Área matemática</a>
+                        <a href="#">Área electrónica</a>
+                        <a href="#">Área social</a>
+                    </div>
+                </li>
+                <li class="MenuProyectos">
+                    <a href="#" class="BotonProyectos">Proyectos</a>
+                    <div class="ContenidoProyectos">
+                        <a href="#">Proyectos en curso</a>
+                        <a href="#">Proyectos terminados</a>
+                        <a href="#">¡Quiero ayudar!</a>
+                    </div>
+                </li>
+                <li class="BarraBusqueda">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Buscar curso" class="Entrada">
+                        <input type="submit" class="BotonBusqueda" value="Buscar">
+                    </form>
+                </li>
+                <li class="Derecha">
+                    <a href="../index.html">Principal</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#probabilidad">Probabilidad</a></li>
-            <li><a href="#distribuciones">Distribuciones de probabilidad</a></li>
-            <li><a href="#estadistica">Estadística</a></li>
-            <li><a href="#regresion">Regresión y correlación</a></li>
-        </ul>
-    </nav>
-    <article>
+    <div class="ContenedorVideo"> 
+        <img src="../images/no-video-img.png" alt="" class="Imagen2">
+        <p class="TituloVideo">Derividas</p>
+        <img src="../images/MtraSilvia.avif" class="Canal" alt="">
+        <p class="NombreCanal">Maestro Pro</p>
+        <div class="Extras">
+            <p>580k visitas</p>
+            <p>34k likes</p>
+        </div>
+    </div>
+    <div class="MostrarTemario">
+        <p>Temario</p>
+        <div class="IntermedioBotones">
+            <div id="BotonFalsoTemario"></div>
+            <button id="BotonMostrarTemario" onclick="OcultarTemario()"></button>
+            <button id="BotonNoMostrarTemario" onclick="MostrarTemario()"></button>
+        </div>
+    </div>
+    <article class="Temario" id="Temario">
+        <h2>Temario</h2>
         <section id="probabilidad">
-            <h2>Probabilidad</h2>
+            <h3>Probabilidad</h3>
             <p>La probabilidad es la rama de las matemáticas que estudia la posibilidad de que un evento ocurra. En esta
                 sección, se exploran los conceptos básicos de la probabilidad, como la definición de eventos, el cálculo
                 de la probabilidad de un evento y la relación entre eventos mutuamente excluyentes y eventos
                 independientes.</p>
         </section>
         <section id="distribuciones">
-            <h2>Distribuciones de probabilidad</h2>
+            <h3>Distribuciones de probabilidad</h3>
             <p>En probabilidad y estadística, se utilizan diversas distribuciones de probabilidad para modelar la
                 incertidumbre en los datos y eventos. En esta sección, se presentan algunas de las distribuciones más
                 comunes, como la distribución normal, la distribución binomial y la distribución de Poisson.</p>
         </section>
         <section id="estadistica">
-            <h2>Estadística</h2>
+            <h3>Estadística</h3>
             <p>La estadística es la ciencia que se encarga de recolectar, organizar, analizar, interpretar y presentar
                 datos. En esta sección, se exploran algunos conceptos básicos de estadística, como la definición de
                 datos, la medida de tendencia central y la medida de dispersión.</p>
         </section>
         <section id="regresion">
-            <h2>Regresión y correlación</h2>
+            <h3>Regresión y correlación</h3>
             <p>La regresión y correlación son técnicas estadísticas que se utilizan para estudiar la relación entre dos
                 o más variables. En esta sección, se presentan algunas de estas técnicas, como la regresión lineal y la
                 correlación de Pearson.</p>
         </section>
     </article>
-    <aside>
+    <div class="MostrarMejora" id="BloqueMostrarMejora">
+        <p>Tips</p>
+        <div class="IntermedioBotones">
+            <div id="BotonFalsoMejora"></div>
+            <button id="BotonMostrarMejora" onclick="OcultarMejora()"></button>
+            <button id="BotonNoMostrarMejora" onclick="MostrarMejora()"></button>
+        </div>
+    </div>
+    <aside class="Mejorar" id="Mejorar">
         <h2>Cómo mejorar el estudio de la Probabilidad y Estadística</h2>
         <ul>
             <li>Comprender bien los conceptos básicos de la probabilidad y estadística, como las distribuciones de
@@ -59,7 +114,11 @@
                 herramientas de análisis estadístico.</li>
         </ul>
     </aside>
-    <footer>
+    <footer class="CreditosRojo">
         <p>3 de marzo de 2023.</p>
         <p>© Todos los derechos reservados.</p>
     </footer>
+    <script src="../scripts/TemarioMejora.js"></script>
+</body>
+
+</html>
