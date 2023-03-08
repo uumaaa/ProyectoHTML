@@ -1,0 +1,5 @@
+ALG006: ¿Cuál es el valor de x en la ecuación 4x + 6 = 22?: 4
+ALG007: Resuelve la ecuación 2(x + 5) - 3(x - 1) = 4x + 7.: 1
+ALG008: Si 5x + 2y = 23 y x - 3y = -7, ¿cuál es el valor de x?: 2
+ALG009: ¿Cuál es el valor de y en la ecuación 3x + 2y = 13 si x = 4?: 2.5
+ALG010: Resuelve la ecuación 3x - 4(x + 2) = -7 + 2(x - 3).: -3

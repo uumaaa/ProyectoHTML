@@ -1,0 +1,45 @@
+.EntradaPregunta {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 0px;
+    position: relative;
+    left: 10%;
+    background-color: #F9EAE1;
+    color: #80004a;
+    border-radius: 10px;
+    border: 3px solid #F9EAE1;
+}
+.Pregunta{
+    position: relative;
+    height: 40px;
+    left: 10%;
+    font-size: 90%;
+    color: #80004a;
+    width: 50%;
+}
+.SegundoTitulo
+{
+    position:relative; 
+    left: 25%;
+    color: #80004a;
+    font-size: 30px;
+}
+.ContenedorPreguntas{
+    position: relative;
+    left: 7.5%;
+    background-color: #F2FDfF;
+    border-radius: 50px;
+    width: 65%;
+    border: 2px solid #80004a;
+}
+.enviarRespuestas{
+    background-color: #80004a;
+    color: #F9EAE1;
+    width: 20%;
+    height: 60px;
+    border-radius: 20px;
+    position: absolute;
+    top: 70%;
+    right: 3%;
+}

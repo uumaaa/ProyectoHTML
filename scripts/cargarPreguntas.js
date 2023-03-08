@@ -1,19 +1,19 @@
 function elegirArchivoAleatorio() {
-  let archivos = ["preguntas1.txt"];
+  let archivos = ["preguntas1.txt", "preguntas2.txt"];
 
-  //return archivos[Math.floor(Math.random() * archivos.length)];
-  return "preguntas1.txt";
+  return archivos[Math.floor(Math.random() * archivos.length)];
 }
 
+let eleccion = elegirArchivoAleatorio();	// Selecciona un archivo aleatorio
 // Leer el archivo de preguntas
-fetch(elegirArchivoAleatorio())
+fetch('../documents/' + eleccion)
   .then((response) => response.text())
   .then((data) => {
     // Separar las preguntas por línea
     let preguntas = data.split("\n");
     let formulario = document.getElementById("formulario");
     let preguntasRandom = shuffle(preguntas); // Mezcla las preguntas aleatoriamente
-
+    formulario.appendChild(document.createElement("br"));
     // Agregar cada pregunta al formulario
     preguntasRandom.forEach((pregunta) => {
       // Separar el ID de la pregunta y la pregunta misma
@@ -24,18 +24,20 @@ fetch(elegirArchivoAleatorio())
       // Crear los elementos de la pregunta
       let label = document.createElement("label");
       label.for = preguntaId;
+      label.className = "Pregunta"
       label.textContent = preguntaTexto;
       formulario.appendChild(label);
-
+      formulario.appendChild(document.createElement("br"));
       let input = document.createElement("input");
       input.type = "text";
+      input.required = true;
+      input.className = "EntradaPregunta"
       input.id = preguntaId;
       input.name = preguntaId;
       formulario.appendChild(input);
-
-      formulario.appendChild(document.createElement("br"));
       formulario.appendChild(document.createElement("br"));
     });
+    formulario.appendChild(document.createElement("br"));
   });
 
 // Función para mezclar aleatoriamente un array
@@ -70,7 +72,7 @@ function enviarRespuestas() {
   }
 
   // Leer el archivo de respuestas
-  fetch("preguntas1.txt")
+  fetch('../documents/' + eleccion)
     .then((response) => response.text())
     .then((data) => {
       // Separar las respuestas por línea
@@ -88,11 +90,13 @@ function enviarRespuestas() {
       // Verificar las respuestas
       let resultado = {};
       for (let preguntaId in respuestas) {
-        if (respuestas.hasOwnProperty(preguntaId)) {
+        if (respuestas.hasOwnProperty(preguntaId) && preguntaId != "") {
           let respuesta = respuestas[preguntaId];
           if (respuesta === respuestasCorrectasMap[preguntaId]) {
             resultado[preguntaId] = "Correcto";
+            document.getElementById(preguntaId).style.borderColor = "darkgreen";
           } else {
+            document.getElementById(preguntaId).style.borderColor = "#80004a";
             resultado[preguntaId] = "Incorrecto";
           }
         }
@@ -103,7 +107,5 @@ function enviarRespuestas() {
           resultadoTexto += preguntaId + ": " + resultado[preguntaId] + "\n";
         }
       }
-
-      alert(resultadoTexto);
     });
 }

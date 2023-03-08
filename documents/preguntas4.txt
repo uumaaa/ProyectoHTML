@@ -1,0 +1,5 @@
+ALG036: ¿Cuál es el valor de a en la ecuación cuadrática x^2 + 2ax + 4a = 0 para que tenga una única solución real?:-1/4
+ALG037: Si el perímetro de un triángulo es 21 cm y dos de sus lados miden 5 cm y 8 cm, ¿cuánto mide el tercer lado?:8
+ALG038: Resuelve el sistema de ecuaciones 2x - 3y = 8 y 5x + y = 1.: x = -1, y = -6
+ALG039: Si el área de un cuadrado es 1/√2 cm^2, ¿cuánto mide su diagonal?:1
+ALG040: Resuelve la ecuación exponencial 3^(2x - 1) = 27.:2
