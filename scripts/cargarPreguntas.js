@@ -33,6 +33,7 @@ fetch('../documents/' + eleccion)
       input.required = true;
       input.className = "EntradaPregunta"
       input.id = preguntaId;
+      input.style.transition="all 0.3s ease-in-out";
       input.name = preguntaId;
       formulario.appendChild(input);
       formulario.appendChild(document.createElement("br"));

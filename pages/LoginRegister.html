@@ -1,75 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/Formulario.css">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/Extras.css">
-    <link rel="stylesheet" href="../styles/BarraNavegacion.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/Formulario.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/Extras.css" />
+    <link rel="stylesheet" href="../styles/BarraNavegacion.css" />
     <title>Cuenta</title>
-
-</head>
-<body class="Fondo">
+  </head>
+  <body>
     <main>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <img src="../images/9824b3e4-ff33-11e9-9853-0231b47980f0.jpeg" alt="Logo IPN" title="Logo IPN"
-                        width="40" height="40" class="LogoIPN">
-                    </li>
-                    <li class="MenuAsesorias">
-                        <a href="#" class="BotonAsesorias">Cursos</a>
-                        <div class="ContenidoAsesorias">
-                            <a href="../pages/area_matematica.html">Área matemática</a>
-                            <a href="#">Área electrónica</a>
-                            <a href="#">Área social</a>
-                        </div>
-                    </li>
-                    <li class="MenuProyectos">
-                        <a href="#" class="BotonProyectos">Proyectos</a>
-                        <div class="ContenidoProyectos">
-                            <a href="#">Proyectos en curso</a>
-                            <a href="#">Proyectos terminados</a>
-                            <a href="#">¡Quiero ayudar!</a>
-                    </li>
-                    <li class="BarraBusqueda">
-                        <form action="#" method="get">
-                            <input type="text" placeholder="Buscar curso" class="Entrada">
-                            <input type="submit" class="BotonBusqueda" value="Buscar">
-                        </form>
-                    </li>
-                    <li class="Derecha">
-                        <a href="../index.html">Principal</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-            <div class="form-box" id="CajaFormulario">
-                <div class="button-box">
-                    <div id="btn"></div>
-                    <button type="button" onclick="login()" class="toggle-btn" id="BotonInicio">Inicio</button>
-                    <button type="button" onclick="register()" class="toggle-btn" id="BotonRegistro">Registro</button>
-                </div>
-                <form id="login" class="input-group-login" name="formularioInicio">
-                    <input type="text" class="input-field" placeholder="Matricula" id="MatriculaI" required>
-                    <input type="password" class="input-field" placeholder="Contraseña" id="ContrasenaI" required>
-                    <input type="checkbox" class="check-box"><span class="TextoExtra">Mantener sesión iniciada</span>
-                    <button type="submit" class="submit-btn" onclick="validacionInicio()">Iniciar sesión</button>
-                </form>
-                <form id="register" class="input-group-register" name="formularioRegistro">
-                    <input type="text" class="input-field" placeholder="Matricula" id="Matricula" required>
-                    <input type="email" class="input-field" placeholder="Correo electronico" id="CorreoElec" required>
-                    <input type="text" class="input-field" placeholder="Usuario" id="Usuario" required>
-                    <input type="password" class="input-field" placeholder="Contraseña" id="Contrasena" required>
-                    <input type="password" class="input-field" placeholder="Repite tu contraseña" id="SegundaContra" required>
-                    <input type="checkbox" class="check-box"><span class="TextoExtra">Acepto los términos y condiciones</span>
-                    <button type="submit" class="submit-btn" onclick="validacionRegistro()">Registrarse</button>
-                </form>
-            </div>
+      <div class="imagen">
+        <img src="../images/ipn_logo_crema.png" alt="Logo IPN" />
+      </div>
+      <div class="form-box" id="CajaFormulario">
+        <p class="TituloPrincipal">POLITips</p>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button
+            type="button"
+            onclick="login()"
+            class="toggle-btn"
+            id="BotonInicio"
+          >
+            <p>Iniciar</p>
+          </button>
+          <button
+            type="button"
+            onclick="register()"
+            class="toggle-btn"
+            id="BotonRegistro"
+          >
+            <p>Registrarse</p>
+          </button>
+        </div>
+        <form id="login" class="input-group-login" name="formularioInicio">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Matricula"
+            id="MatriculaI"
+            required
+          />
+          <input
+            type="password"
+            class="input-field-middle"
+            placeholder="Contraseña"
+            id="ContrasenaI"
+            required
+          />
+          <button type="submit" class="submit-btn" onclick="validacionInicio()">
+            Iniciar sesión
+          </button>
+        </form>
+        <form
+          id="register"
+          class="input-group-register"
+          name="formularioRegistro"
+        >
+          <input
+            type="text"
+            class="input-field-register"
+            placeholder="Matricula"
+            id="Matricula"
+            required
+          />
+          <input
+            type="email"
+            class="input-field-middle"
+            placeholder="Correo electronico"
+            id="CorreoElec"
+            required
+          />
+          <input
+            type="text"
+            class="input-field-middle"
+            placeholder="Usuario"
+            id="Usuario"
+            required
+          />
+          <input
+            type="password"
+            class="input-field-middle"
+            placeholder="Contraseña"
+            id="Contrasena"
+            required
+          />
+          <input
+            type="password"
+            class="input-field-middle"
+            placeholder="Repite tu contraseña"
+            id="SegundaContra"
+            required
+          />
+          <button
+            type="submit"
+            class="submit-btn"
+            onclick="validacionRegistro()"
+          >
+            Registrarse
+          </button>
+        </form>
+      </div>
     </main>
-    <script src="../scripts/Form.js"></script>
-</body>
+    <script src="../scripts/Form.js" defer></script>
+  </body>
 </html>
