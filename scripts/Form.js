@@ -29,15 +29,15 @@ function validacionRegistro() {
   var Contrasena2 = document.getElementById("SegundaContra");
 
   if (Matricula.value == "") Matricula.style.borderColor = "#80004a";
-  else Matricula.style.borderColor = "#dfe2e2";
+  else Matricula.style.borderColor = "#d8cdc6";
   if (Correo.value == "") Correo.style.borderColor = "#80004a";
-  else Correo.style.borderColor = "#dfe2e2";
+  else Correo.style.borderColor = "#d8cdc6";
   if (Usuario.value == "") Usuario.style.borderColor = "#80004a";
-  else Usuario.style.borderColor = "#dfe2e2";
+  else Usuario.style.borderColor = "#d8cdc6";
   if (Contrasena.value == "") Contrasena.style.borderColor = "#80004a";
-  else Contrasena.style.borderColor = "#dfe2e2";
+  else Contrasena.style.borderColor = "#d8cdc6";
   if (Contrasena2.value == "") Contrasena2.style.borderColor = "#80004a";
-  else Contrasena2.style.borderColor = "#dfe2e2";
+  else Contrasena2.style.borderColor = "#d8cdc6";
   if (Contrasena.value != Contrasena2.value) {
     alert("Las contraseñas no son iguales, inténtalo de nuevo");
     Contrasena2.style.borderColor = "#80004a";
@@ -47,8 +47,8 @@ function validacionRegistro() {
       Contrasena2.style.borderColor = "#80004a";
       Contrasena.style.borderColor = "#80004a";
     } else {
-      Contrasena2.style.borderColor = "#dfe2e2";
-      Contrasena.style.borderColor = "#dfe2e2";
+      Contrasena2.style.borderColor = "#d8cdc6";
+      Contrasena.style.borderColor = "#d8cdc6";
     }
   }
 }
@@ -56,7 +56,7 @@ function validacionInicio() {
   var Matricula = document.getElementById("MatriculaI");
   var Contrasena = document.getElementById("ContrasenaI");
   if (Contrasena.value == "") Contrasena.style.borderColor = "#80004a";
-  else Contrasena.style.borderColor = "#dfe2e2";
+  else Contrasena.style.borderColor = "#d8cdc6";
   if (Matricula.value == "") Matricula.style.borderColor = "#80004a";
-  else Matricula.style.borderColor = "#dfe2e2";
+  else Matricula.style.borderColor = "#d8cdc6";
 }
