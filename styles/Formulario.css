@@ -80,7 +80,7 @@
   transition: 0.5s;
 }
 .input-field::placeholder {
-  color: black;
+  color: 676969;
 }
 .input-field-register {
   width: 100%;
@@ -96,7 +96,7 @@
   transition: 0.5s;
 }
 .input-field-register::placeholder {
-  color: black;
+  color: 676969;
 }
 .input-field-middle {
   width: 100%;
@@ -111,7 +111,7 @@
   transition: 0.5s;
 }
 .input-field-middle::placeholder {
-  color: black;
+  color: 676969;
 }
 .submit-btn {
   width: 100%;
