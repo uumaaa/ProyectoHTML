@@ -166,4 +166,17 @@
   #Escondido {
     display: flex;
   }
+  .BarraBusqueda {
+    left: 100px;
+  }
+}
+@media (max-width: 550px) {
+  .BarraBusqueda {
+    left: 65px;
+    width: 230px;
+    font-size: 15px;
+  }
+  .BotonBusqueda {
+    font-size: 10px;
+  }
 }
