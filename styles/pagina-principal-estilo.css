@@ -79,7 +79,7 @@
 .ContenidoAyuda {
   margin: auto;
   display: block;
-  width: 40%;
+  width: 60vw;
   height: 50%;
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -93,13 +93,14 @@
 .ContenidoAyuda h2 {
   margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 20px;
+  font-size: 40px;
   font-family: "PoppinsBold";
 }
 .Cerrar {
   position: absolute;
+  text-shadow: 1px 0 15px black;
   top: 9%;
-  right: 28%;
+  right: 18%;
   color: #80004a;
   font-size: 40px;
   font-weight: bold;
