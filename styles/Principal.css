@@ -1,16 +1,15 @@
 .Titulo {
   font-size: 5vw;
   width: 15ch;
-  margin-top: 70px;
-  margin-left: 60px;
   color: #80004a;
   font-family: "PoppinsBold";
+  transition: 0.5s;
 }
 .Texto {
   font-size: 3vw;
   width: 30ch;
-  margin-left: 60px;
   color: #80004a;
+  transition: 0.5s;
 }
 .ContenidoFondo {
   padding: 5px auto;
@@ -26,32 +25,36 @@
   flex-direction: row;
   align-items: center;
   justify-content: end;
+  transition: 0.5s;
 }
 .Imagen2 {
   height: 20vw;
   object-fit: cover;
   border-radius: 100px;
+  transition: 0.5s;
 }
 .BotonCurso2 {
-  height: 4.5vw;
+  height: max(4.5vw, 70px);
   width: 30%;
   background-color: #f9eae1;
   border: 5px solid #80004a;
   color: #80004a;
   border-radius: 15px;
-  font-size: 1.3vw;
+  font-size: max(1.3vw, 20px);
   font-family: "PoppinsBold";
   cursor: pointer;
+  transition: 0.5s;
 }
 .BotonAyuda {
-  height: 4.5vw;
+  height: max(4.5vw, 70px);
   width: 65%;
   background-color: #80004a;
   color: #f9eae1;
   border-radius: 15px;
-  font-size: 1.3vw;
+  font-size: max(1.3vw, 20px);
   font-family: "PoppinsBold";
   cursor: pointer;
+  transition: 0.5s;
 }
 .Botones {
   margin-top: 50px;
@@ -60,6 +63,7 @@
   display: flex;
   flex-direction: row;
   width: 90vw;
+  transition: 0.5s;
   justify-content: space-around;
 }
 .ComoAyudar {
@@ -122,6 +126,7 @@
 }
 
 .PrimeraFila {
+  padding: 20px 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -132,11 +137,68 @@ body {
 }
 .Titulo2 {
   width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 30vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .Botones {
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 170px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .BotonCurso2 {
+    height: 70px;
+    width: 80%;
+    font-size: 20px;
+  }
+  .BotonAyuda {
+    height: 70px;
+    width: 80%;
+    background-color: #80004a;
+    color: #f9eae1;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "PoppinsBold";
+    cursor: pointer;
+  }
+  .Imagen {
+    display: none;
+  }
+  .Titulo2 {
+    width: 100vw;
+    padding: 0 15px;
+  }
+  .Titulo {
+    font-size: 10.6vw;
+    overflow-x: none;
+  }
+  .Texto {
+    font-size: 6vw;
+  }
+  .PrimeraFila {
+    height: 450px;
+  }
+  .ContenidoAyuda {
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    width: 90%;
+  }
+  .Cerrar {
+    top: 180px;
+    right: 2%;
+  }
+  .ContenidoAyuda h2 {
+    font-size: 40px;
+  }
+  .ContenidoAyuda p {
+    font-size: 20px;
   }
 }
