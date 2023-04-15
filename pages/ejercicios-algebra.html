@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ejercicios de álgebra</title>
-	<script src="../scripts/cargarPreguntas.js"></script>
-	<link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/Extras.css">
-    <link rel="stylesheet" href="../styles/BarraNavegacion.css">
-    <link rel="stylesheet" href="../styles/Materias.css">
-    <link rel="stylesheet" href="../styles/Ejercicios.css">
-</head>
-<body>
-	<header>
-        <nav>
-            <ul>
-                <li>
-                    <img src="../images/9824b3e4-ff33-11e9-9853-0231b47980f0.jpeg" alt="Logo IPN" title="Logo IPN"
-                    width="40" height="40" class="LogoIPN">
-                </li>
-                <li class="MenuAsesorias">
-                    <a href="#" class="BotonAsesorias">Cursos</a>
-                    <div class="ContenidoAsesorias">
-                        <a href="#">Área matemática</a>
-                        <a href="#">Área electrónica</a>
-                        <a href="#">Área social</a>
-                    </div>
-                </li>
-                <li class="MenuProyectos">
-                    <a href="#" class="BotonProyectos">Proyectos</a>
-                    <div class="ContenidoProyectos">
-                        <a href="#">Proyectos en curso</a>
-                        <a href="#">Proyectos terminados</a>
-                        <a href="#">¡Quiero ayudar!</a>
-                </li>
-                <li class="BarraBusqueda">
-                    <form action="#" method="get">
-                        <input type="text" placeholder="Buscar curso" class="Entrada">
-                        <input type="submit" class="BotonBusqueda" value="Buscar">
-                    </form>
-                </li>
-                <li class="Derecha">
-                    <a href="../index.html">Principal</a>
-                </li>
-            </ul>
-        </nav>
-        <h1 class="Titulo">Ejercicios de álgebra</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de álgebra</title>
+    <script src="../scripts/script-mostrar-preguntas.js" defer></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/extras.css" />
+    <link rel="stylesheet" href="../styles/barra-navegacion-estilo.css" />
+    <link rel="stylesheet" href="../styles/area-matematica-estilo.css" />
+    <link rel="stylesheet" href="../styles/ejercicios-estilo.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="BarraNavegacion">
+        <ul>
+          <li>
+            <a href="../index.html"
+              ><img
+                src="../images/ipn_logo_crema.png"
+                alt="Logo IPN"
+                title="Logo IPN"
+                class="LogoIPN"
+              />
+            </a>
+          </li>
+          <li class="MenuAsesorias">
+            <a href="#" class="BotonAsesorias">Cursos</a>
+            <div class="ContenidoAsesorias">
+              <a href="../pages/area-matematica.html">Área matemática</a>
+              <a href="#">Área electrónica</a>
+              <a href="#">Área social</a>
+            </div>
+          </li>
+          <li class="MenuProyectos">
+            <a href="#" class="BotonProyectos">Proyectos</a>
+            <div class="ContenidoProyectos">
+              <a href="#">Proyectos en curso</a>
+              <a href="#">Proyectos terminados</a>
+              <a href="#">¡Quiero ayudar!</a>
+            </div>
+          </li>
+          <li class="MenuEjercicios">
+            <a href="#" class="BotonEjercicios">Ejercicios</a>
+            <div class="ContenidoEjercicios"></div>
+          </li>
+          <li class="BarraBusqueda">
+            <form action="#" method="get">
+              <input
+                type="text"
+                placeholder="Buscar curso"
+                class="Entrada"
+                name="CursoBuscado"
+              />
+              <input type="submit" class="BotonBusqueda" value="Buscar" />
+            </form>
+          </li>
+          <li class="MenuEscondido">
+            <a href="#" class="MenuEscondido">≡</a>
+            <div class="ContenidoEscondido">
+              <a href="../pages/area-matematica.html">Cursos</a>
+              <a href="#">Proyectos</a>
+              <a href="#">Ejercicios</a>
+              <a href="../pages/cuenta.html" id="Escondido">Iniciar sesión</a>
+            </div>
+          </li>
+          <li class="MenuSesion">
+            <a href="#" class="BotonSesion">Cuenta</a>
+            <div class="ContenidoSesion">
+              <a href="../pages/cuenta.html">Inicio</a>
+              <a href="../pages/cuenta.html">Registro</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="Titulo">Ejercicios de álgebra</h1>
     </header>
-	<main>
-		<h2 class="SegundoTitulo">Contesta las preguntas, comprueba los resultados</h2>
-        <br>
-        <div class="ContenedorPreguntas">
-        <form id="formulario">
-		</form>
-        </div>
-        <button class = "enviarRespuestas" onclick="enviarRespuestas()">Enviar respuestas</button>
-	</main>
-</body>
+    <main>
+      <h2 class="SegundoTitulo">
+        Contesta las preguntas, comprueba los resultados
+      </h2>
+      <br />
+      <div class="ContenedorPreguntas">
+        <form id="formulario"></form>
+      </div>
+      <button class="enviarRespuestas" onclick="enviarRespuestas()">
+        Enviar respuestas
+      </button>
+    </main>
+  </body>
 </html>
