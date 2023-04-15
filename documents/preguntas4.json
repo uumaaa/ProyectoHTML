@@ -1,0 +1,29 @@
+[{
+"id": "ALG036",
+"texto": "¿Cuál es el valor de a en la ecuación cuadrática x^2 + 2ax + 4a = 0 para que tenga una única solución real?",
+"respuesta": "-1/4"
+},
+
+{
+"id": "ALG037",
+"texto": "Si el perímetro de un triángulo es 21 cm y dos de sus lados miden 5 cm y 8 cm, ¿cuánto mide el tercer lado?",
+"respuesta": "8"
+},
+
+{
+"id": "ALG038",
+"texto": "Resuelve el sistema de ecuaciones 2x - 3y = 8 y 5x + y = 1.",
+"respuesta": "x = -1, y = -6"
+},
+
+{
+"id": "ALG039",
+"texto": "Si el área de un cuadrado es 1/√2 cm^2, ¿cuánto mide su diagonal?",
+"respuesta": "1"
+},
+
+{
+"id": "ALG040",
+"texto": "Resuelve la ecuación exponencial 3^(2x - 1) = 27.",
+"respuesta": "2"
+}]

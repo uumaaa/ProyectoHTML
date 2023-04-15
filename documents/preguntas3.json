@@ -1,0 +1,29 @@
+[{
+"id": "ALG006",
+"texto": "¿Cuál es el valor de x en la ecuación 4x + 6 = 22?",
+"respuesta": "4"
+},
+
+{
+"id": "ALG007",
+"texto": "Resuelve la ecuación 2(x + 5) - 3(x - 1) = 4x + 7.",
+"respuesta": "1"
+},
+
+{
+"id": "ALG008",
+"texto": "Si 5x + 2y = 23 y x - 3y = -7, ¿cuál es el valor de x?",
+"respuesta": "2"
+},
+
+{
+"id": "ALG009",
+"texto": "¿Cuál es el valor de y en la ecuación 3x + 2y = 13 si x = 4?",
+"respuesta": "2.5"
+},
+
+{
+"id": "ALG010",
+"texto": "Resuelve la ecuación 3x - 4(x + 2) = -7 + 2(x - 3).",
+"respuesta": "-3"
+}]

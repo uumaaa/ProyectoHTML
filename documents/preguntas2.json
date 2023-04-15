@@ -1,0 +1,59 @@
+[{
+"id": "ALG031",
+"texto": "¿Cuál es la ecuación de la recta que pasa por los puntos (2, 1) y (4, 5) en su forma pendiente-intercepto?",
+"respuesta": "y = 2x - 3"
+},
+
+{
+"id": "ALG032",
+"texto": "¿Cuál es el valor de x en la ecuación log2(x) = 3?",
+"respuesta": "8"
+},
+
+{
+"id": "ALG033",
+"texto": "Resuelve la siguiente inecuación: 3x - 4 > 5x + 6",
+"respuesta": "x < -5"
+},
+
+{
+"id": "ALG034",
+"texto": "¿Cuál es la pendiente de la recta que pasa por los puntos (2, 5) y (6, 1)?",
+"respuesta": "-1/2"
+},
+
+{
+"id": "ALG035",
+"texto": "Si f(x) = 3x + 5 y g(x) = 2x - 1, ¿cuál es el valor de (f + g)(x) para x = 4?",
+"respuesta": "21"
+},
+
+{
+"id": "ALG036",
+"texto": "¿Cuál es el valor de a en la ecuación cuadrática x^2 + 2ax + 4a = 0 para que tenga una única solución real?",
+"respuesta": "-1/4"
+},
+
+{
+"id": "ALG037",
+"texto": "Si el perímetro de un triángulo es 21 cm y dos de sus lados miden 5 cm y 8 cm, ¿cuánto mide el tercer lado?",
+"respuesta": "8"
+},
+
+{
+"id": "ALG038",
+"texto": "Resuelve el sistema de ecuaciones 2x - 3y = 8 y 5x + y = 1.",
+"respuesta": "x = -1, y = -6"
+},
+
+{
+"id": "ALG039",
+"texto": "Si el área de un cuadrado es 1/√2 cm^2, ¿cuánto mide su diagonal?",
+"respuesta": "1"
+},
+
+{
+"id": "ALG040",
+"texto": "Resuelve la ecuación exponencial 3^(2x - 1) = 27.",
+"respuesta": "2"
+}]
