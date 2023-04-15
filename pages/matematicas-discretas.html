@@ -1,118 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/extras.css">
-    <link rel="stylesheet" href="../styles/barra-navegacion-estilo.css">
-    <link rel="stylesheet" href="../styles/contenido-cursos-estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/extras.css" />
+    <link rel="stylesheet" href="../styles/barra-navegacion-estilo.css" />
+    <link rel="stylesheet" href="../styles/contenido-cursos-estilo.css" />
     <title>Matemáticas Discretas</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <img src="../images/9824b3e4-ff33-11e9-9853-0231b47980f0.jpeg" alt="Logo IPN" title="Logo IPN"
-                        width="40" height="40" class="LogoIPN">
-                </li>
-                <li class="MenuAsesorias">
-                    <a href="#" class="BotonAsesorias">Cursos</a>
-                    <div class="ContenidoAsesorias">
-                        <a href="../pages/area_matematica.html">Área matemática</a>
-                        <a href="#">Área electrónica</a>
-                        <a href="#">Área social</a>
-                    </div>
-                </li>
-                <li class="MenuProyectos">
-                    <a href="#" class="BotonProyectos">Proyectos</a>
-                    <div class="ContenidoProyectos">
-                        <a href="#">Proyectos en curso</a>
-                        <a href="#">Proyectos terminados</a>
-                        <a href="#">¡Quiero ayudar!</a>
-                    </div>
-                </li>
-                <li class="BarraBusqueda">
-                    <form action="#" method="get">
-                        <input type="text" placeholder="Buscar curso" class="Entrada">
-                        <input type="submit" class="BotonBusqueda" value="Buscar">
-                    </form>
-                </li>
-                <li class="Derecha">
-                    <a href="../index.html">Principal</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="BarraNavegacion">
+        <ul>
+          <li>
+            <a href="../index.html"
+              ><img
+                src="../images/ipn_logo_crema.png"
+                alt="Logo IPN"
+                title="Logo IPN"
+                class="LogoIPN"
+              />
+            </a>
+          </li>
+          <li class="MenuAsesorias">
+            <a href="#" class="BotonAsesorias">Cursos</a>
+            <div class="ContenidoAsesorias">
+              <a href="../pages/area-matematica.html">Área matemática</a>
+              <a href="#">Área electrónica</a>
+              <a href="#">Área social</a>
+            </div>
+          </li>
+          <li class="MenuProyectos">
+            <a href="#" class="BotonProyectos">Proyectos</a>
+            <div class="ContenidoProyectos">
+              <a href="#">Proyectos en curso</a>
+              <a href="#">Proyectos terminados</a>
+              <a href="#">¡Quiero ayudar!</a>
+            </div>
+          </li>
+          <li class="MenuEjercicios">
+            <a href="../pages/ejercicios-algebra.html" class="BotonEjercicios"
+              >Ejercicios</a
+            >
+            <div class="ContenidoEjercicios"></div>
+          </li>
+          <li class="BarraBusqueda">
+            <form action="#" method="get">
+              <input
+                type="text"
+                placeholder="Buscar curso"
+                class="Entrada"
+                name="CursoBuscado"
+              />
+              <input type="submit" class="BotonBusqueda" value="Buscar" />
+            </form>
+          </li>
+          <li class="MenuEscondido">
+            <a href="#" class="MenuEscondido">≡</a>
+            <div class="ContenidoEscondido">
+              <a href="../pages/area-matematica.html">Cursos</a>
+              <a href="#">Proyectos</a>
+              <a href="../pages/ejercicios-algebra.html">Ejercicios</a>
+              <a href="../pages/cuenta.html" id="Escondido">Iniciar sesión</a>
+            </div>
+          </li>
+          <li class="MenuSesion">
+            <a href="#" class="BotonSesion">Cuenta</a>
+            <div class="ContenidoSesion">
+              <a href="../pages/cuenta.html">Inicio</a>
+              <a href="../pages/cuenta.html">Registro</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <div class="ContenedorVideo"> 
-        <img src="../images/no-video-img.png" alt="" class="Imagen2">
-        <p class="TituloVideo">Algorimo de Dijkstra - Práctica</p>
-        <img src="../images/MtraSilvia.avif" class="Canal" alt="">
-        <p class="NombreCanal">Maestra Rubí</p>
-        <div class="Extras">
-            <p>15 visitas</p>
-            <p>5 likes</p>
-        </div>
+    <div class="ContenedorVideo">
+      <img src="../images/no-video-img.png" alt="" class="Imagen2" />
+      <p class="TituloVideo">Algorimo de Dijkstra - Práctica</p>
+      <img src="../images/MtraSilvia.avif" class="Canal" alt="" />
+      <p class="NombreCanal">Maestra Rubí</p>
+      <div class="Extras">
+        <p>15 visitas</p>
+        <p>5 likes</p>
+      </div>
     </div>
     <div class="MostrarTemario">
-        <p>Temario</p>
-        <div class="IntermedioBotones">
-            <div id="BotonFalsoTemario"></div>
-            <button id="BotonMostrarTemario" onclick="OcultarTemario()"></button>
-            <button id="BotonNoMostrarTemario" onclick="MostrarTemario()"></button>
-        </div>
-
+      <p>Temario</p>
+      <div class="IntermedioBotones">
+        <div id="BotonFalsoTemario"></div>
+        <button id="BotonMostrarTemario" onclick="OcultarTemario()"></button>
+        <button id="BotonNoMostrarTemario" onclick="MostrarTemario()"></button>
+      </div>
     </div>
     <article class="Temario" id="Temario">
-        <h2>Temario</h2>
-        <section id="logica">
-            <h3>Lógica</h3>
-            <p>La lógica matemática es el estudio de los principios y métodos utilizados para distinguir el razonamiento
-                correcto del incorrecto. En matemáticas discretas, la lógica es importante para la construcción de
-                sistemas formales y la resolución de problemas de decisión.</p>
-        </section>
-        <section id="conjuntos">
-            <h3>Teoría de Conjuntos</h3>
-            <p>La teoría de conjuntos es una rama de las matemáticas que estudia las propiedades y relaciones de los
-                conjuntos, que son colecciones de objetos. En matemáticas discretas, la teoría de conjuntos es
-                fundamental para la construcción de la teoría de números y la teoría de grafos.</p>
-        </section>
-        <section id="grafos">
-            <h3>Teoría de Grafos</h3>
-            <p>La teoría de grafos es una rama de las matemáticas que estudia las propiedades y aplicaciones de los
-                grafos, que son estructuras matemáticas que representan relaciones entre objetos. En matemáticas
-                discretas, la teoría de grafos es importante para la modelización de problemas en ciencias de la
-                computación, la optimización y la teoría de redes.</p>
-        </section>
+      <h2>Temario</h2>
+      <section id="logica">
+        <h3>Lógica</h3>
+        <p>
+          La lógica matemática es el estudio de los principios y métodos
+          utilizados para distinguir el razonamiento correcto del incorrecto. En
+          matemáticas discretas, la lógica es importante para la construcción de
+          sistemas formales y la resolución de problemas de decisión.
+        </p>
+      </section>
+      <section id="conjuntos">
+        <h3>Teoría de Conjuntos</h3>
+        <p>
+          La teoría de conjuntos es una rama de las matemáticas que estudia las
+          propiedades y relaciones de los conjuntos, que son colecciones de
+          objetos. En matemáticas discretas, la teoría de conjuntos es
+          fundamental para la construcción de la teoría de números y la teoría
+          de grafos.
+        </p>
+      </section>
+      <section id="grafos">
+        <h3>Teoría de Grafos</h3>
+        <p>
+          La teoría de grafos es una rama de las matemáticas que estudia las
+          propiedades y aplicaciones de los grafos, que son estructuras
+          matemáticas que representan relaciones entre objetos. En matemáticas
+          discretas, la teoría de grafos es importante para la modelización de
+          problemas en ciencias de la computación, la optimización y la teoría
+          de redes.
+        </p>
+      </section>
     </article>
     <div class="MostrarMejora" id="BloqueMostrarMejora">
-        <p>Tips</p>
-        <div class="IntermedioBotones">
-            <div id="BotonFalsoMejora"></div>
-            <button id="BotonMostrarMejora" onclick="OcultarMejora()"></button>
-            <button id="BotonNoMostrarMejora" onclick="MostrarMejora()"></button>
-        </div>
-
+      <p>Tips</p>
+      <div class="IntermedioBotones">
+        <div id="BotonFalsoMejora"></div>
+        <button id="BotonMostrarMejora" onclick="OcultarMejora()"></button>
+        <button id="BotonNoMostrarMejora" onclick="MostrarMejora()"></button>
+      </div>
     </div>
     <aside class="Mejorar" id="Mejorar">
-        <h2>Cómo mejorar el estudio de las Matemáticas Discretas</h2>
-        <ul>
-            <li>Practicar con ejercicios y problemas de diferentes fuentes, como libros de texto, sitios web y
-                aplicaciones.</li>
-            <li>Participar en grupos de estudio y discusión con otros estudiantes y profesores.</li>
-            <li>Utilizar herramientas y software especializado para visualizar y analizar objetos matemáticos, como
-                grafos.</li>
-            <li>Asistir a conferencias y charlas sobre temas relacionados con las matemáticas discretas.</li>
-        </ul>
+      <h2>Cómo mejorar el estudio de las Matemáticas Discretas</h2>
+      <ul>
+        <li>
+          Practicar con ejercicios y problemas de diferentes fuentes, como
+          libros de texto, sitios web y aplicaciones.
+        </li>
+        <li>
+          Participar en grupos de estudio y discusión con otros estudiantes y
+          profesores.
+        </li>
+        <li>
+          Utilizar herramientas y software especializado para visualizar y
+          analizar objetos matemáticos, como grafos.
+        </li>
+        <li>
+          Asistir a conferencias y charlas sobre temas relacionados con las
+          matemáticas discretas.
+        </li>
+      </ul>
     </aside>
     <footer class="CreditosRojo">
-        <p>3 de marzo de 2023.</p>
-        <p>© Todos los derechos reservados.</p>
+      <p>3 de marzo de 2023.</p>
+      <p>© Todos los derechos reservados.</p>
     </footer>
     <script src="../scripts/TemarioMejora.js"></script>
-</body>
+  </body>
 </html>
