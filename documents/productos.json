@@ -1,0 +1,72 @@
+[
+  {
+    "nombreproducto": "Curso de Matemáticas Básicas",
+    "precio": 500,
+    "rating": 4.5,
+    "categorias": ["curso", "matemáticas"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Curso de Álgebra Lineal",
+    "precio": 800,
+    "rating": 4.7,
+    "categorias": ["curso", "matemáticas"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Curso de Cálculo Diferencial e Integral",
+    "precio": 1200,
+    "rating": 4.8,
+    "categorias": ["curso", "matemáticas"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Curso de Programación en Java",
+    "precio": 1000,
+    "rating": 4.6,
+    "categorias": ["curso", "programación"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Curso de Programación en Python Avanzado",
+    "precio": 1500,
+    "rating": 4.9,
+    "categorias": ["curso", "programación"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Curso de Desarrollo de Aplicaciones Web con AngularJS",
+    "precio": 2000,
+    "rating": 4.7,
+    "categorias": ["curso", "programación"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Camiseta 'I Speak Fluent Code'",
+    "precio": 400,
+    "rating": 4.5,
+    "categorias": ["prenda", "merchandising"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Taza 'Code Life'",
+    "precio": 250,
+    "rating": 4.8,
+    "categorias": ["taza", "merchandising"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Gorra 'HTML for Everyone'",
+    "precio": 500,
+    "rating": 4.6,
+    "categorias": ["gorra", "merchandising"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  },
+  {
+    "nombreproducto": "Curso de Data Science con R",
+    "precio": 1800,
+    "rating": 4.8,
+    "categorias": ["curso", "programación", "data science"],
+    "imagen": "https://filomania.com.mx/wp-content/uploads/2020/07/chamarras-ipn-promo-filomania-basica.png"
+  }
+]

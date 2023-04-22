@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   color: #f9eae1;
-  height: 55px;
+  height: 8.3vh;
   width: 100px;
   text-decoration: none;
   background-color: #80004a;
@@ -85,7 +85,7 @@
 }
 .MenuSesion:hover .ContenidoSesion {
   right: 0;
-  top: 55px;
+  top: 8.3vh;
   animation: 0.5s;
 }
 
@@ -97,7 +97,7 @@
 }
 .Entrada {
   width: 77%;
-  height: 40px;
+  height: 6vh;
   padding: 10px;
   background-color: #f9eae1;
   color: #80004a;
@@ -117,7 +117,7 @@
   background-color: #80004a;
   border-radius: 10px;
   width: 20%;
-  height: 40px;
+  height: 6vh;
   cursor: pointer;
   animation: 0.5s;
 }
