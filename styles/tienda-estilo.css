@@ -1,0 +1,133 @@
+html {
+  overflow-y: hidden;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+aside.BarraLateralIzq {
+  width: 17%;
+  height: 92vh;
+  background-color: #8f0053;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f9eae1;
+}
+section.ProductosSeleccionados {
+  width: 85%;
+  height: 45%;
+  background-color: #7a0047;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+section.OfertasMostradas {
+  width: 85%;
+  height: 45%;
+  background-color: #7a0047;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+article.BarraLateralDer {
+  width: 13%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8f0053;
+  color: #f9eae1;
+}
+section.MostrarFiltros {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90%;
+  background-color: #7a0047;
+}
+div.ContenedorProductos {
+  width: 70%;
+  height: 92vh;
+  background-color: #f9eae1;
+  overflow: auto;
+}
+article.Productos {
+  width: 100%;
+  padding: 20px;
+  height: 620vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 14px;
+}
+section.Producto {
+  border-radius: 10px;
+  grid-area: auto;
+  background-color: #7a0047;
+  color: #f9eae1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.Producto > img {
+  width: 45%;
+  height: 45%;
+}
+article.productoMaximizado {
+  background-color: #f9eae1;
+  position: absolute;
+  top: 5vh;
+  left: 15vw;
+  width: 70vw;
+  border-radius: 40px;
+  height: 90vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  animation-duration: 0.6s;
+  animation-name: zoom;
+}
+div.Datos {
+  color: #f9eae1;
+  width: 47%;
+  height: 92%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #8f0053;
+}
+article.productoMaximizado > img {
+  width: 47%;
+  height: 92%;
+  object-fit: cover;
+}
+.Cerrar {
+  position: absolute;
+  text-shadow: 1px 0 15px black;
+  top: 1vh;
+  right: 13%;
+  color: #80004a;
+  font-size: 40px;
+  font-weight: bold;
+  animation-duration: 0.2s;
+  animation-name: zoom;
+}
+
+.Cerrar:hover,
+.Cerrar:focus {
+  color: #5a0035;
+  text-decoration: none;
+  cursor: pointer;
+}
