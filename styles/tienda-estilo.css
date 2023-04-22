@@ -25,6 +25,7 @@ section.ProductosSeleccionados {
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  font-size: 10px;
 }
 section.OfertasMostradas {
   width: 85%;
@@ -35,6 +36,7 @@ section.OfertasMostradas {
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  font-size: 10px;
 }
 article.BarraLateralDer {
   width: 13%;
@@ -113,21 +115,23 @@ article.productoMaximizado > img {
   height: 92%;
   object-fit: cover;
 }
-.Cerrar {
-  position: absolute;
-  text-shadow: 1px 0 15px black;
-  top: 1vh;
-  right: 13%;
-  color: #80004a;
-  font-size: 40px;
-  font-weight: bold;
-  animation-duration: 0.2s;
-  animation-name: zoom;
+.Botones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.Cerrar:hover,
-.Cerrar:focus {
-  color: #5a0035;
-  text-decoration: none;
-  cursor: pointer;
+section.ProductosSeleccionados img {
+  width: 40%;
+  object-fit: cover;
+}
+section.productoCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+div.DatosChicos {
+  width: 50%;
 }

@@ -44,25 +44,61 @@ function comprarProducto(event) {
   let precioProducto = datos[2].cloneNode(true);
   let calificacionProducto = datos[3].cloneNode(true);
   let productoMaximizado = document.createElement("article");
-  let cerrar = document.createElement("p");
-  cerrar.textContent = "X";
-  cerrar.classList.add("Cerrar");
-  cerrar.addEventListener("click", borrarProducto);
+  let botonesDiv = document.createElement("div");
+  let botonCerrar = document.createElement("button");
+  let botonAgregar = document.createElement("button");
+  botonesDiv.classList.add("Botones");
+  botonCerrar.textContent = "Cancelar";
+  botonAgregar.textContent = "Agregar al carrito";
+  botonCerrar.addEventListener("click", borrarProducto);
+  botonAgregar.addEventListener("click", agregarCarrito);
+  botonesDiv.appendChild(botonAgregar);
+  botonesDiv.appendChild(botonCerrar);
   productoMaximizado.classList.add("productoMaximizado");
   let datosMaximizados = document.createElement("div");
   datosMaximizados.classList.add("Datos");
   datosMaximizados.appendChild(nombreProducto);
   datosMaximizados.appendChild(precioProducto);
-  datosMaximizados.append(calificacionProducto);
+  datosMaximizados.appendChild(calificacionProducto);
+  datosMaximizados.appendChild(botonesDiv);
   productoMaximizado.appendChild(datosMaximizados);
   productoMaximizado.appendChild(imagenProducto);
   document.body.appendChild(productoMaximizado);
-  document.body.appendChild(cerrar);
 }
 
-function borrarProducto() {
-  let botonCerrar = document.querySelector(".Cerrar");
-  let productoMaximizado = document.querySelector(".productoMaximizado");
+function borrarProducto(event) {
+  let botonCerrar = event.currentTarget;
+  let productoMaximizado = document.querySelectorAll(".productoMaximizado");
   botonCerrar.remove();
+  for (let pM of productoMaximizado) {
+    pM.remove();
+  }
+}
+var carritoDeCompra = document.querySelector(".ProductosSeleccionados");
+var conteoProductos = 0;
+function agregarCarrito(event) {
+  let botonAgregar = event.currentTarget;
+  let productoMaximizado = document.querySelector(".productoMaximizado");
+  let hijosProducto = productoMaximizado.childNodes;
+  let productoCarrito = document.createElement("section");
+  productoCarrito.classList.add("productoCarrito");
+  let datosProducto = document.createElement("div");
+  datosProducto.classList.add("DatosChicos");
+  let nombreProducto = document.createElement("p");
+  let precioProducto = document.createElement("p");
+  let imagenProducto = hijosProducto[1].cloneNode();
+  if (conteoProductos == 0) {
+    carritoDeCompra.innerHTML = "";
+  }
+  conteoProductos++;
+  nombreProducto.textContent = hijosProducto[0].childNodes[0].textContent;
+  precioProducto.textContent = hijosProducto[0].childNodes[1].textContent;
+  datosProducto.appendChild(nombreProducto);
+  datosProducto.appendChild(precioProducto);
+  productoCarrito.appendChild(datosProducto);
+  productoCarrito.appendChild(imagenProducto);
+  carritoDeCompra.appendChild(productoCarrito);
+  botonAgregar.remove();
+
   productoMaximizado.remove();
 }
