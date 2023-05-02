@@ -35,7 +35,6 @@ fetch("../documents/productos.json")
     });
   });
 
-
   function comprarProducto(event) {
     let botonPresionado = event.currentTarget;
     let padre = botonPresionado.parentNode;
