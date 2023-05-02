@@ -84,7 +84,7 @@ section.Producto {
   justify-content: space-evenly;
 }
 
-section.Producto h3{
+section.Producto h3 {
   z-index: 99;
   bottom: 80px;
   text-align: center;
@@ -96,7 +96,7 @@ section.Producto h3{
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-section.Producto p{
+section.Producto p {
   z-index: 99;
   opacity: 0;
   font-size: 12px;
@@ -105,14 +105,11 @@ section.Producto p{
   transition: 0.2s ease;
 }
 
-
 section.Producto > img {
   width: 45%;
   height: 45%;
   z-index: 100;
   border-radius: 12px;
-  filter: sepia(100%);
-  transition: 0.3s ease;
 }
 
 .botonComprar {
@@ -126,34 +123,26 @@ section.Producto > img {
   transition: 0.3s ease;
 }
 
-
-.botonComprar:hover{
+.botonComprar:hover {
   background-color: #d99e9e;
   transform: scale(1.1);
   opacity: 0.5;
 }
 
-
-section.Producto:hover h3{
+section.Producto:hover h3 {
   color: #570133;
   font-size: 100%;
   transition: 0.2 ease;
 }
 
-section.Producto:hover p{
+section.Producto:hover p {
   opacity: 1;
   bottom: 1%;
   align-items: center;
 }
 
-
-section.Producto:hover > img {
-  filter: sepia(0);
-}
-
-
 article.productoMaximizado {
-  backdrop-filter:   blur(5px);
+  backdrop-filter: blur(5px);
   background-color: rgba(192, 143, 31, 0.5);
   position: absolute;
   top: 5vh;
@@ -192,10 +181,9 @@ article.productoMaximizado > img {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
-.Botones button{
+.Botones button {
   color: #ffffff;
   background-color: #5b0c0c;
   padding: 10px;
@@ -203,7 +191,6 @@ article.productoMaximizado > img {
   cursor: pointer;
   transition: 0.3s ease;
 }
-
 
 section.ProductosSeleccionados img {
   width: 40%;
@@ -218,13 +205,11 @@ section.productoCarrito {
   overflow-y: scroll;
 }
 
-
 section.productoCarrito img {
   max-width: 70px;
-  margin: 10px; 
+  margin: 10px;
 }
 
 div.DatosChicos {
   width: 50%;
 }
-
