@@ -15,7 +15,7 @@ fetch("../documents/productos.json")
       let calificacionProducto = producto.rating;
       let urlProducto = producto.imagen;
       let imagenOutput = document.createElement("img");
-      let nombreOutput = document.createElement("p");
+      let nombreOutput = document.createElement("h3");
       let precioOutput = document.createElement("p");
       let calificacionOutput = document.createElement("p");
       let botonComprar = document.createElement("button");
@@ -24,8 +24,8 @@ fetch("../documents/productos.json")
       botonComprar.classList.add("botonComprar");
       botonComprar.textContent = "Comprar";
       nombreOutput.textContent = nombreProducto;
-      precioOutput.textContent = "$" + precioProducto;
-      calificacionOutput.textContent = calificacionProducto;
+      precioOutput.textContent = "Precio:  $"  + precioProducto;
+      calificacionOutput.textContent = "Calificacion: " + calificacionProducto;
       contenedor.appendChild(imagenOutput);
       contenedor.appendChild(nombreOutput);
       contenedor.appendChild(precioOutput);
@@ -35,36 +35,43 @@ fetch("../documents/productos.json")
     });
   });
 
-function comprarProducto(event) {
-  let botonPresionado = event.currentTarget;
-  let padre = botonPresionado.parentNode;
-  let datos = padre.childNodes;
-  let imagenProducto = datos[0].cloneNode(true);
-  let nombreProducto = datos[1].cloneNode(true);
-  let precioProducto = datos[2].cloneNode(true);
-  let calificacionProducto = datos[3].cloneNode(true);
-  let productoMaximizado = document.createElement("article");
-  let botonesDiv = document.createElement("div");
-  let botonCerrar = document.createElement("button");
-  let botonAgregar = document.createElement("button");
-  botonesDiv.classList.add("Botones");
-  botonCerrar.textContent = "Cancelar";
-  botonAgregar.textContent = "Agregar al carrito";
-  botonCerrar.addEventListener("click", borrarProducto);
-  botonAgregar.addEventListener("click", agregarCarrito);
-  botonesDiv.appendChild(botonAgregar);
-  botonesDiv.appendChild(botonCerrar);
-  productoMaximizado.classList.add("productoMaximizado");
-  let datosMaximizados = document.createElement("div");
-  datosMaximizados.classList.add("Datos");
-  datosMaximizados.appendChild(nombreProducto);
-  datosMaximizados.appendChild(precioProducto);
-  datosMaximizados.appendChild(calificacionProducto);
-  datosMaximizados.appendChild(botonesDiv);
-  productoMaximizado.appendChild(datosMaximizados);
-  productoMaximizado.appendChild(imagenProducto);
-  document.body.appendChild(productoMaximizado);
-}
+
+
+
+
+
+  
+  function comprarProducto(event) {
+    let botonPresionado = event.currentTarget;
+    let padre = botonPresionado.parentNode;
+    let datos = padre.childNodes;
+    let imagenProducto = datos[0].cloneNode(true);
+    let nombreProducto = datos[1].cloneNode(true);
+    let precioProducto = datos[2].cloneNode(true);
+    let calificacionProducto = datos[3].cloneNode(true);
+    let productoMaximizado = document.createElement("article");
+    let botonesDiv = document.createElement("div");
+    let botonCerrar = document.createElement("button");
+    let botonAgregar = document.createElement("button");
+    botonesDiv.classList.add("Botones");
+    botonCerrar.textContent = "Cancelar";
+    botonAgregar.textContent = "Agregar al carrito";
+    botonCerrar.addEventListener("click", borrarProducto);
+    botonAgregar.addEventListener("click", agregarCarrito);
+    botonesDiv.appendChild(botonAgregar);
+    botonesDiv.appendChild(botonCerrar);
+    productoMaximizado.classList.add("productoMaximizado");
+    let datosMaximizados = document.createElement("div");
+    datosMaximizados.classList.add("Datos");
+    datosMaximizados.appendChild(nombreProducto);
+    datosMaximizados.appendChild(precioProducto);
+    datosMaximizados.appendChild(calificacionProducto);
+    datosMaximizados.appendChild(botonesDiv);
+    productoMaximizado.appendChild(datosMaximizados);
+    productoMaximizado.appendChild(imagenProducto);
+    document.body.appendChild(productoMaximizado);
+  }
+  
 
 function borrarProducto(event) {
   let botonCerrar = event.currentTarget;
