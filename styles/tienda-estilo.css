@@ -19,7 +19,11 @@ aside.BarraLateralIzq {
 section.ProductosSeleccionados {
   width: 85%;
   height: 45%;
-  background:linear-gradient(60deg, rgb(136, 7, 58) 0%, rgba(19, 37, 194, 0.644) 200%);
+  background: linear-gradient(
+    60deg,
+    rgb(136, 7, 58) 0%,
+    rgba(19, 37, 194, 0.644) 200%
+  );
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -30,7 +34,11 @@ section.ProductosSeleccionados {
 section.OfertasMostradas {
   width: 85%;
   height: 45%;
-  background: linear-gradient(60deg, rgb(136, 7, 58) 0%, rgba(19, 37, 194, 0.644) 200%);
+  background: linear-gradient(
+    60deg,
+    rgb(136, 7, 58) 0%,
+    rgba(19, 37, 194, 0.644) 200%
+  );
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -49,12 +57,26 @@ article.BarraLateralDer {
   color: #f9eae1;
 }
 section.MostrarFiltros {
+  padding-top: 10vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
   width: 90%;
   height: 90%;
-  background:linear-gradient(60deg, rgb(136, 7, 58) 0%, rgba(19, 37, 194, 0.644) 200%);
+  background: linear-gradient(
+    60deg,
+    rgb(136, 7, 58) 0%,
+    rgba(19, 37, 194, 0.644) 200%
+  );
   border-radius: 5px;
+}
+section.MostrarFiltros button {
+  margin-top: 12px;
+  width: 100%;
+  height: 25px;
+  background-color: #f9e1e1;
+  color: #80004a;
 }
 div.ContenedorProductos {
   width: 70%;
@@ -71,7 +93,11 @@ article.Productos {
   grid-gap: 14px;
 }
 section.Producto {
-  background: linear-gradient(60deg, rgb(136, 7, 58) 0%, rgba(19, 37, 194, 0.644) 200%);
+  background: linear-gradient(
+    60deg,
+    rgb(136, 7, 58) 0%,
+    rgba(19, 37, 194, 0.644) 200%
+  );
 
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -85,7 +111,7 @@ section.Producto {
   justify-content: space-evenly;
 }
 
-section.Producto h3{
+section.Producto h3 {
   z-index: 99;
   bottom: 80px;
   text-align: center;
@@ -97,7 +123,7 @@ section.Producto h3{
   text-shadow: 0 0 15px rgba(128, 55, 55, 0.9);
 }
 
-section.Producto p{
+section.Producto p {
   z-index: 99;
   opacity: 0;
   font-size: 12px;
@@ -105,7 +131,6 @@ section.Producto p{
   letter-spacing: 1px;
   transition: 0.2s ease;
 }
-
 
 section.Producto > img {
   width: 45%;
@@ -127,35 +152,31 @@ section.Producto > img {
   transition: 0.3s ease;
 }
 
-
-.botonComprar:hover{
+.botonComprar:hover {
   background-color: #0eb9f8;
   transform: scale(1.1);
   opacity: 0.5;
 }
 
-
-section.Producto:hover h3{
+section.Producto:hover h3 {
   color: #02ddff;
   font-size: 100%;
   transition: 0.2 ease;
 }
 
-section.Producto:hover p{
+section.Producto:hover p {
   opacity: 1;
   bottom: 1%;
   align-items: center;
 }
 
-
 section.Producto:hover > img {
   filter: blur(0);
 }
 
-
 article.productoMaximizado {
-  backdrop-filter:   blur(5px);
-  background-color: rgba(122, 0, 71, 0.5);;
+  backdrop-filter: blur(5px);
+  background-color: rgba(122, 0, 71, 0.5);
   position: absolute;
   top: 5vh;
   left: 15vw;
@@ -179,7 +200,11 @@ div.Datos {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(60deg, rgba(107, 12, 74, 0.666) 0%,rgba(128, 55, 106, 0.9) 100%);
+  background: linear-gradient(
+    60deg,
+    rgba(107, 12, 74, 0.666) 0%,
+    rgba(128, 55, 106, 0.9) 100%
+  );
 }
 article.productoMaximizado > img {
   width: 47%;
@@ -193,10 +218,9 @@ article.productoMaximizado > img {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
-.Botones button{
+.Botones button {
   color: #ffffff;
   background-color: rgb(122, 0, 71);
   padding: 10px;
@@ -204,7 +228,6 @@ article.productoMaximizado > img {
   cursor: pointer;
   transition: 0.3s ease;
 }
-
 
 section.ProductosSeleccionados img {
   width: 40%;
@@ -219,17 +242,16 @@ section.productoCarrito {
   overflow-y: scroll;
 }
 
-
 section.productoCarrito img {
   max-width: 70px;
-  margin: 10px; 
+  margin: 10px;
 }
 
 div.DatosChicos {
   width: 50%;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   article.Productos {
     width: 90%;
     height: 90%;
@@ -246,9 +268,9 @@ div.DatosChicos {
     height: 300px;
     justify-content: center;
   }
-} 
+}
 
-@media  (max-width: 1250px){
+@media (max-width: 1250px) {
   aside.BarraLateralIzq {
     display: none;
   }
@@ -260,10 +282,6 @@ div.DatosChicos {
   div.ContenedorProductos {
     width: 100%;
     height: 100%;
-    overflow-y:scroll;
+    overflow-y: scroll;
   }
-
 }
-
-
-

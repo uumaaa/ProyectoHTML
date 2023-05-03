@@ -1,8 +1,46 @@
 var productos = document.querySelector(".Productos");
-fetch("../documents/productos.json")
-  .then((response) => response.text())
-  .then((data) => {
-    let productosLeidos = JSON.parse(data);
+
+function cargarProductos(a) {
+  productos.innerHTML = "";
+  if (a === 0) {
+    fetch("../documents/productos.json")
+      .then((response) => response.text())
+      .then((data) => {
+        let productosLeidos = JSON.parse(data);
+        let cantidadProductos = productosLeidos.length;
+        let cantidadFilas = Math.ceil(cantidadProductos / 3);
+        productos.style.gridTemplateRows = "repeat(" + cantidadFilas + ",1fr)";
+        productos.style.height = "" + cantidadFilas * 45.5 + "vh";
+        productosLeidos.forEach((producto) => {
+          let contenedor = document.createElement("section");
+          contenedor.classList.add("Producto");
+          let nombreProducto = producto.nombreproducto;
+          let precioProducto = producto.precio;
+          let calificacionProducto = producto.rating;
+          let urlProducto = producto.imagen;
+          let imagenOutput = document.createElement("img");
+          let nombreOutput = document.createElement("h3");
+          let precioOutput = document.createElement("p");
+          let calificacionOutput = document.createElement("p");
+          let botonComprar = document.createElement("button");
+          imagenOutput.src = urlProducto;
+          botonComprar.addEventListener("click", comprarProducto);
+          botonComprar.classList.add("botonComprar");
+          botonComprar.textContent = "Comprar";
+          nombreOutput.textContent = nombreProducto;
+          precioOutput.textContent = "Precio:  $" + precioProducto;
+          calificacionOutput.textContent =
+            "Calificacion: " + calificacionProducto;
+          contenedor.appendChild(imagenOutput);
+          contenedor.appendChild(nombreOutput);
+          contenedor.appendChild(precioOutput);
+          contenedor.appendChild(calificacionOutput);
+          contenedor.appendChild(botonComprar);
+          productos.appendChild(contenedor);
+        });
+      });
+  } else {
+    let productosLeidos = a;
     let cantidadProductos = productosLeidos.length;
     let cantidadFilas = Math.ceil(cantidadProductos / 3);
     productos.style.gridTemplateRows = "repeat(" + cantidadFilas + ",1fr)";
@@ -33,7 +71,8 @@ fetch("../documents/productos.json")
       contenedor.appendChild(botonComprar);
       productos.appendChild(contenedor);
     });
-  });
+  }
+}
 
 function comprarProducto(event) {
   let botonPresionado = event.currentTarget;
@@ -75,42 +114,34 @@ function comprarProducto(event) {
   document.body.appendChild(blurEffect);
 }
 
+const form = document.getElementById("Filtros");
 
-  const form = document.getElementById("Filtros");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-  
-    const categoriasSeleccionadas = [];
-  
-    const checkboxCategorias = form.querySelectorAll('input[type="checkbox"]');
-  
-    checkboxCategorias.forEach(function(checkbox) {
-      if (checkbox.checked) {
-        categoriasSeleccionadas.push(checkbox.parentNode.textContent.trim());
-      }
-    });
-  
-    fetch("../documents/productos.json")
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(productos) {
-        const productosFiltrados = productos.filter(function(producto) {
-          return producto.categorias.some(function(categoria) {
-            return categoriasSeleccionadas.includes(categoria);
-          });
-        });
-  
-        console.log(productosFiltrados);
-      })
-      .catch(function(error) {
-        console.error(error);
-      });
+  const categoriasSeleccionadas = [];
+
+  const checkboxCategorias = form.querySelectorAll('input[type="checkbox"]');
+  checkboxCategorias.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      categoriasSeleccionadas.push(checkbox.parentNode.textContent.trim());
+    }
   });
-  
-  
-
+  fetch("../documents/productos.json")
+    .then((response) => response.json())
+    .then((productos) => {
+      const productosFiltrados = productos.filter((producto) =>
+        producto.categorias.some((categoria) =>
+          categoriasSeleccionadas.includes(categoria)
+        )
+      );
+      console.log("hl");
+      cargarProductos(productosFiltrados);
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+});
 
 function borrarProducto(event) {
   let botonCerrar = event.currentTarget;
@@ -120,6 +151,7 @@ function borrarProducto(event) {
     pM.remove();
   }
   blurEffect.style.backdropFilter = "blur(0)";
+  blurEffect.remove();
 }
 var carritoDeCompra = document.querySelector(".ProductosSeleccionados");
 var conteoProductos = 0;
@@ -150,3 +182,5 @@ function agregarCarrito(event) {
   blurEffect.remove();
   productoMaximizado.remove();
 }
+
+cargarProductos(0);
