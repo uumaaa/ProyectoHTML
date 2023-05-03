@@ -9,7 +9,7 @@ main {
 aside.BarraLateralIzq {
   width: 17%;
   height: 92vh;
-  background-color: #ffffff;
+  background-color: #f9eae1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -45,7 +45,7 @@ article.BarraLateralDer {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #f9eae1;
   color: #f9eae1;
 }
 section.MostrarFiltros {
@@ -90,7 +90,7 @@ section.Producto h3 {
   text-align: center;
   font-size: 100%;
   font-weight: 700;
-  color: #fff;
+  color: #f9eae1;
   pointer-events: none;
   transition: 0.2 ease;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);

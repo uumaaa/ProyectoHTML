@@ -8,6 +8,12 @@ materiaA.addEventListener("mouseover", cambiarColorTexto);
 materiaCI.addEventListener("mouseover", cambiarColorTexto);
 materiaCD.addEventListener("mouseover", cambiarColorTexto);
 materiaPE.addEventListener("mouseover", cambiarColorTexto);
+materiaMD.addEventListener("mouseout", regresarColorTexto);
+materiaA.addEventListener("mouseout", regresarColorTexto);
+materiaCI.addEventListener("mouseout", regresarColorTexto);
+materiaCD.addEventListener("mouseout", regresarColorTexto);
+materiaPE.addEventListener("mouseout", regresarColorTexto);
+
 function cambiarColorTexto(e) {
   let currentElement = e.currentTarget;
   if (currentElement.className == "MateriaMD") {
@@ -29,4 +35,9 @@ function cambiarColorTexto(e) {
     currentElement.childNodes[1].childNodes[3].style.backgroundColor =
       "darkblue";
   }
+}
+function regresarColorTexto(e) {
+  let currentElement = e.currentTarget;
+  currentElement.childNodes[1].childNodes[3].style.backgroundColor =
+    "rgba(0, 0, 0, 0.75)";
 }

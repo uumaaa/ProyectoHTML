@@ -24,7 +24,7 @@ fetch("../documents/productos.json")
       botonComprar.classList.add("botonComprar");
       botonComprar.textContent = "Comprar";
       nombreOutput.textContent = nombreProducto;
-      precioOutput.textContent = "Precio:  $"  + precioProducto;
+      precioOutput.textContent = "Precio:  $" + precioProducto;
       calificacionOutput.textContent = "Calificacion: " + calificacionProducto;
       contenedor.appendChild(imagenOutput);
       contenedor.appendChild(nombreOutput);
@@ -35,37 +35,45 @@ fetch("../documents/productos.json")
     });
   });
 
-  function comprarProducto(event) {
-    let botonPresionado = event.currentTarget;
-    let padre = botonPresionado.parentNode;
-    let datos = padre.childNodes;
-    let imagenProducto = datos[0].cloneNode(true);
-    let nombreProducto = datos[1].cloneNode(true);
-    let precioProducto = datos[2].cloneNode(true);
-    let calificacionProducto = datos[3].cloneNode(true);
-    let productoMaximizado = document.createElement("article");
-    let botonesDiv = document.createElement("div");
-    let botonCerrar = document.createElement("button");
-    let botonAgregar = document.createElement("button");
-    botonesDiv.classList.add("Botones");
-    botonCerrar.textContent = "Cancelar";
-    botonAgregar.textContent = "Agregar al carrito";
-    botonCerrar.addEventListener("click", borrarProducto);
-    botonAgregar.addEventListener("click", agregarCarrito);
-    botonesDiv.appendChild(botonAgregar);
-    botonesDiv.appendChild(botonCerrar);
-    productoMaximizado.classList.add("productoMaximizado");
-    let datosMaximizados = document.createElement("div");
-    datosMaximizados.classList.add("Datos");
-    datosMaximizados.appendChild(nombreProducto);
-    datosMaximizados.appendChild(precioProducto);
-    datosMaximizados.appendChild(calificacionProducto);
-    datosMaximizados.appendChild(botonesDiv);
-    productoMaximizado.appendChild(datosMaximizados);
-    productoMaximizado.appendChild(imagenProducto);
-    document.body.appendChild(productoMaximizado);
-  }
-  
+function comprarProducto(event) {
+  let botonPresionado = event.currentTarget;
+  let padre = botonPresionado.parentNode;
+  let datos = padre.childNodes;
+  let imagenProducto = datos[0].cloneNode(true);
+  let nombreProducto = datos[1].cloneNode(true);
+  let precioProducto = datos[2].cloneNode(true);
+  let calificacionProducto = datos[3].cloneNode(true);
+  let productoMaximizado = document.createElement("article");
+  let botonesDiv = document.createElement("div");
+  let botonCerrar = document.createElement("button");
+  let botonAgregar = document.createElement("button");
+  let blurEffect = document.createElement("section");
+  blurEffect.style.width = "100vw";
+  blurEffect.style.height = "100vh";
+  blurEffect.style.position = "absolute";
+  blurEffect.style.top = "0";
+  blurEffect.style.zIndex = "5";
+  blurEffect.id = "blurEffect";
+  blurEffect.style.backdropFilter = "blur(5px)";
+  botonesDiv.classList.add("Botones");
+  botonCerrar.textContent = "Cancelar";
+  botonAgregar.textContent = "Agregar al carrito";
+  botonCerrar.addEventListener("click", borrarProducto);
+  botonAgregar.addEventListener("click", agregarCarrito);
+  botonesDiv.appendChild(botonAgregar);
+  botonesDiv.appendChild(botonCerrar);
+  productoMaximizado.classList.add("productoMaximizado");
+  let datosMaximizados = document.createElement("div");
+  datosMaximizados.classList.add("Datos");
+  datosMaximizados.appendChild(nombreProducto);
+  datosMaximizados.appendChild(precioProducto);
+  datosMaximizados.appendChild(calificacionProducto);
+  datosMaximizados.appendChild(botonesDiv);
+  productoMaximizado.appendChild(datosMaximizados);
+  productoMaximizado.appendChild(imagenProducto);
+  document.body.appendChild(productoMaximizado);
+  document.body.appendChild(blurEffect);
+}
 
 function borrarProducto(event) {
   let botonCerrar = event.currentTarget;
@@ -74,6 +82,7 @@ function borrarProducto(event) {
   for (let pM of productoMaximizado) {
     pM.remove();
   }
+  blurEffect.style.backdropFilter = "blur(0)";
 }
 var carritoDeCompra = document.querySelector(".ProductosSeleccionados");
 var conteoProductos = 0;
@@ -100,6 +109,7 @@ function agregarCarrito(event) {
   productoCarrito.appendChild(imagenProducto);
   carritoDeCompra.appendChild(productoCarrito);
   botonAgregar.remove();
-
+  blurEffect.style.backdropFilter = "blur (0)";
+  blurEffect.remove();
   productoMaximizado.remove();
 }
