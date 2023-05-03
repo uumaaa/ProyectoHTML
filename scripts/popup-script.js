@@ -22,7 +22,7 @@ function crearPopup() {
   texto.style.fontSize = "25px";
   texto.style.width = "50vw";
   texto.style.height = "50vh";
-  texto.style.padding = "10%";
+  texto.style.padding = "5%";
   texto.style.fontWeight = "bold";
   texto.style.display = "flex";
   texto.style.textAlign = "center";

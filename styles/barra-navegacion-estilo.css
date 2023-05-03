@@ -21,7 +21,8 @@
   justify-content: center;
   color: #f9eae1;
   height: max(8.3vh, 50px);
-  width: 100px;
+  width: 90px;
+  font-size: 15px;
   text-decoration: none;
   background-color: #80004a;
   animation: 0.5s;
@@ -63,7 +64,8 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  width: 250px;
+  width: 200px;
+  font-size: 15px;
   animation: 0.5s;
   text-align: left;
   animation: 0.5s;
@@ -91,12 +93,12 @@
 
 .BarraBusqueda {
   position: absolute;
-  left: 37vw;
+  left: 45vw;
   width: max(40vw, 350px);
   animation: 0.5s;
 }
 .Entrada {
-  width: 77%;
+  width: 60%;
   height: max(6vh, 40px);
   padding: 10px;
   background-color: #f9eae1;
@@ -136,7 +138,7 @@
     display: none;
   }
   .MenuEscondido {
-    font-size: 45px;
+    font-size: 70px;
     display: block;
     position: absolute;
     right: 0px;
@@ -171,14 +173,16 @@
     left: 100px;
   }
 }
-@media (max-width: 550px) {
-  .BarraBusqueda {
-    left: 65px;
-    width: 230px;
-    font-size: 15px;
-    display: none;
-  }
-  .BotonBusqueda {
-    font-size: 10px;
-  }
+#contador {
+  background-color: #80004a;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  color: #f9eae1;
+  font-size: 20px;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
