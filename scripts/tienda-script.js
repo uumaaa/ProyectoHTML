@@ -75,6 +75,43 @@ function comprarProducto(event) {
   document.body.appendChild(blurEffect);
 }
 
+
+  const form = document.getElementById("Filtros");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    const categoriasSeleccionadas = [];
+  
+    const checkboxCategorias = form.querySelectorAll('input[type="checkbox"]');
+  
+    checkboxCategorias.forEach(function(checkbox) {
+      if (checkbox.checked) {
+        categoriasSeleccionadas.push(checkbox.parentNode.textContent.trim());
+      }
+    });
+  
+    fetch("../documents/productos.json")
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(productos) {
+        const productosFiltrados = productos.filter(function(producto) {
+          return producto.categorias.some(function(categoria) {
+            return categoriasSeleccionadas.includes(categoria);
+          });
+        });
+  
+        console.log(productosFiltrados);
+      })
+      .catch(function(error) {
+        console.error(error);
+      });
+  });
+  
+  
+
+
 function borrarProducto(event) {
   let botonCerrar = event.currentTarget;
   let productoMaximizado = document.querySelectorAll(".productoMaximizado");
