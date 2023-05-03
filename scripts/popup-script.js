@@ -3,7 +3,10 @@ function crearPopup() {
   var popup = document.createElement("div");
   popup.style.background = "#000";
   popup.classList.add("hidden");
+  //popup.hidden.style.backgroundColor("red");
+
   popup.setAttribute("id", "myPopup");
+
 
   var texto = document.createElement("div");
   texto.innerHTML =
@@ -11,16 +14,18 @@ function crearPopup() {
   texto.classList.add("popup-text");
   //Se le agregan los estilos para que este en centro de la pantalla
   texto.style.position = "absolute";
-  texto.style.top = "50%";
+  texto.style.top = "25%";
   texto.style.left = "50%";
   texto.style.transform = "translate(-50%, -50%)";
-  texto.style.color = "white";
-  texto.style.fontSize = "50px";
+  texto.style.color = "#E6E6FA";
+  texto.style.fontSize = "30px";
+  texto.style.padding = "10px";
   texto.style.fontFamily = "Arial";
   texto.style.fontWeight = "bold";
   texto.style.textAlign = "center";
-  texto.style.backgroundColor = "black";
+  texto.style.background ="linear-gradient(60deg, rgba(107, 94, 12, 0.666) 0%,rgba(228, 90, 35, 0.9) 100%)";
   texto.style.display = "block";
+  texto.style.borderRadius = "10px";
 
   var boton = document.createElement("button");
   boton.innerHTML = "X";
@@ -29,11 +34,12 @@ function crearPopup() {
   boton.style.position = "absolute";
 
   boton.style.color = "white";
-  boton.style.fontSize = "50px";
+  boton.style.fontSize = "25px";
   boton.style.fontFamily = "Arial";
   boton.style.fontWeight = "bold";
+  boton.style.color = ("red");
   boton.style.textAlign = "center";
-  boton.style.backgroundColor = "black";
+  boton.style.background = "linear-gradient(60deg, rgba(107, 94, 12, 0.666) 0%,rgba(228, 90, 35, 0.9) 100%)";
   boton.style.display = "block";
   boton.style.border = "none";
   boton.style.outline = "none";
@@ -42,10 +48,10 @@ function crearPopup() {
   boton.style.width = "50px";
   boton.style.height = "50px";
   boton.style.borderRadius = "50%";
-  boton.style.boxShadow = "0 0 0 2px black";
+  boton.style.boxShadow = "0 0 0 2px red";
 
-  boton.style.top = "50%";
-  boton.style.left = "50%";
+  boton.style.bottom = "600px";
+  boton.style.left = "75%";
   boton.style.transform = "translate(-50%, -50%)";
 
   //Se le agrega el evento al boton para que al hacer click se oculte el popup
