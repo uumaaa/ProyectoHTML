@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actualizar Datos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+<form action="/actualizar/{{datos.id}}" method="POST" class="container100" enctype="multipart/form-data">
+  <div class="form-group">
+    <h2><strong>Titulo actual:</strong>  {{datos.titulo}}</h2>
+    <p><strong>Descripción actual:</strong> {{datos.descripcion}}</p>
+  </div>
+  <input type="hidden" name="asignaturaActual" value="{{datos.asignatura}}">
+  <div class="form-group">
+    <input type="text" name="nuevoTitulo" class="form-control" placeholder="Nuevo título" required>
+  </div>
+  <div class="form-group">
+    <div class="image-container">
+     
+      <div class="form-group">
+        <label for="editarFoto">Actualizar video:</label>
+        <input type="file" name="nuevaFoto" id="editarFoto" class="form-control" accept="image/*">
+      </div>
+       <video src="/uploads/{{datos.foto}}" controls alt="Foto actual" class="current-image"></video>
+    </div>
+    <input type="file" name="nuevaFoto" id="nuevaFoto" class="form-control d-none">
+  </div>
+  <div class="form-group">
+    <input type="text" name="nuevaDescripcion" class="form-control" placeholder="Nueva descripción" required>
+  </div>
+  <div class="form-group">
+    <label for="nuevaAsignatura">Nueva Asignatura:</label>
+    <select name="nuevaAsignatura" id="nuevaAsignatura" class="form-control" required>
+      <option value="matematicas_discretas" {{#ifCond datos.asignatura "===" "matematicas_discretas"
+        }}selected{{/ifCond}}>Matemáticas discretas</option>
+      <option value="algebra" {{#ifCond datos.asignatura "===" "algebra" }}selected{{/ifCond}}>Álgebra</option>
+      <option value="calculo_diferencial" {{#ifCond datos.asignatura "===" "calculo_diferencial"
+        }}selected{{/ifCond}}>Cálculo diferencial</option>
+      <option value="calculo_integral" {{#ifCond datos.asignatura "===" "calculo_integral"
+        }}selected{{/ifCond}}>Cálculo integral</option>
+      <option value="probabilidad_y_estadistica" {{#ifCond datos.asignatura "===" "probabilidad_y_estadistica"
+        }}selected{{/ifCond}}>Probabilidad y estadística</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+  </div>
+</form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

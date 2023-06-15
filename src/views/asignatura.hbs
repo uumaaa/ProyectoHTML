@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asignatura: {{asignatura}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <script>
+        function formatAsignatura(asignatura) {
+            var palabras = asignatura.split('_');
+            var formateado = palabras.map(function (palabra) {
+                return palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase();
+            });
+            return formateado.join(' ');
+        }
+
+        window.onload = function () {
+            var asignaturaElement = document.querySelector('.asig');
+            asignaturaElement.textContent = formatAsignatura(asignaturaElement.textContent);
+        };
+    </script>
+</head>
+
+<body>
+    <h1 class="asig">{{asignatura}}</h1>
+    {{#each datos}}
+    <div class="card">
+        
+        <div class="card-body">
+            <h2 class="card-title"><strong>Titulo: </strong>{{titulo}}</h2>
+            <p><em>Descripcion:</em><br>{{descripcion}}</p>
+            <div class="card-buttons">
+                <form action="/{{asignatura}}/editar/{{id}}" method="GET">
+                    <button class="btn btn-primary" type="submit">Editar</button>
+                </form>
+                <form action="/{{asignatura}}/borrar/{{id}}" method="POST">
+                    <button class="btn btn-danger" type="submit">Borrar</button>
+                </form>
+            </div>
+        </div>
+        <video src="/uploads/{{foto}}"  class="card-img"  alt="este no es:{{foto}}" ></video>
+    </div>
+    {{/each}}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

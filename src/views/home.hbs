@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inicio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+
+<body>
+  <div class="container100">
+    <header class="ayuda">
+      <h1>Subir contenido</h1>
+    </header>
+
+    <form method="post" action="/guardar_datos" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="foto">Video a subir:</label>
+        <input type="file" name="foto" id="foto" class="form-control" accept="video/*" required>
+      </div>
+
+      <div class="form-group">
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" id="titulo" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="asignatura">Asignatura:</label>
+        <select name="asignatura" id="asignatura" class="form-control" required>
+          <option value="matematicas_discretas">Matemáticas discretas</option>
+          <option value="algebra">Álgebra</option>
+          <option value="calculo_diferencial">Cálculo diferencial</option>
+          <option value="calculo_integral">Cálculo integral</option>
+          <option value="probabilidad_y_estadistica">Probabilidad y estadística</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <input type="text" name="descripcion" id="descripcion" class="form-control" required>
+      </div>
+
+      <input type="submit" value="Guardar" class="btn btn-primary">
+    </form>
+  </div>
+</body>
+
+</html>

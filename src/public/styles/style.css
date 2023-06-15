@@ -1,0 +1,373 @@
+
+ body {
+   background-color: #fffbf3;
+ }
+
+
+ h1 {
+   text-align: center;
+ }
+
+
+#temp {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ced4da;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-bottom: 20px;
+ }
+
+#temp {
+   background-color: #ff0000;
+   color: #ffffff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+#temp:hover {
+   background-color: #cc0000;
+ }
+
+ .container100 {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.ayuda {
+  background-color: #80004a;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  color: white;
+}
+
+.form-group label {
+  color: #80004a;
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #80004a;
+}
+
+select.form-control {
+  color: #80004a;
+}
+
+.btn-primary {
+  background-color: #80004a;
+  border-color: #80004a;
+}
+
+.btn-primary:hover {
+  background-color: #660041;
+  border-color: #660041;
+}
+
+h2 {
+  color: #80004a;
+}
+
+p {
+  color: #80004a;
+}
+
+.form-group label {
+  color: #80004a;
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #80004a;
+}
+
+select.form-control {
+  color: #80004a;
+}
+
+.btn-primary {
+  background-color: #80004a;
+  border-color: #80004a;
+}
+
+.btn-primary:hover {
+  background-color: #660041;
+  border-color: #660041;
+}
+
+  .image-container{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+
+  .BarraNavegacion {
+    background-color: rgb(128, 0, 74);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .BarraNavegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .BarraNavegacion li {
+    margin-right: 10px;
+  }
+  
+  .BarraNavegacion a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9eae1;
+    height: 50px;
+    padding: 0 10px;
+    text-decoration: none;
+    background-color: #80004a;
+    font-size: 15px;
+  }
+  .MenuEscondido {
+    display: none;
+  }
+  .BarraNavegacion li > a,
+  .BotonAsesorias,
+  .BotonProyectos,
+  .BotonSesion,
+  .BotonEscondido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9eae1;
+    height: max(8.3vh, 50px);
+    width: 90px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #80004a;
+    animation: 0.5s;
+  }
+  
+  .BarraNavegacion li a:hover,
+  .MenuAsesorias:hover .BotonAsesorias,
+  .MenuProyectos:hover .BotonProyectos,
+  .MenuSesion:hover .BotonSesion,
+  .MenuEscondido:hover .BotonEscondido {
+    background-color: #590134;
+  }
+  
+  .BarraNavegacion li .MenuAsesorias,
+  .BarraNavegacion li .MenuProyectos,
+  .BarraNavegacion li .MenuSesion,
+  .BarraNavegacion li .MenuEscondido {
+    display: flex;
+    animation: 0.5s;
+    flex-direction: column;
+  }
+  
+  .ContenidoAsesorias,
+  .ContenidoProyectos,
+  .ContenidoSesion,
+  .ContenidoEscondido {
+    display: none;
+    position: absolute;
+    background-color: #80004a;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.354);
+    z-index: 2;
+    animation: 0.5s;
+  }
+  .ContenidoAsesorias a,
+  .ContenidoProyectos a,
+  .ContenidoSesion a,
+  .ContenidoEscondido a {
+    color: #f9eae1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    font-size: 15px;
+    animation: 0.5s;
+    text-align: left;
+    animation: 0.5s;
+  }
+  
+  .ContenidoAsesorias a:hover,
+  .ContenidoProyectos a:hover,
+  .ContenidoSesion a:hover,
+  .ContenidoEscondido a:hover {
+    background-color: #590134;
+  }
+  
+  .MenuAsesorias:hover .ContenidoAsesorias,
+  .MenuProyectos:hover .ContenidoProyectos,
+  .MenuSesion:hover .ContenidoSesion,
+  .MenuEscondido:hover .ContenidoEscondido {
+    display: block;
+    animation: 0.5s;
+  }
+  .MenuSesion:hover .ContenidoSesion {
+    right: 0;
+    top: max(8.3vh, 50px);
+    animation: 0.5s;
+  }
+  
+  .BarraBusqueda {
+    position: absolute;
+    left: 45vw;
+    width: max(40vw, 350px);
+    animation: 0.5s;
+  }
+  .Entrada {
+    width: 60%;
+    height: max(6vh, 40px);
+    padding: 10px;
+    background-color: #f9eae1;
+    color: #80004a;
+    border: 3px solid #f9eae1;
+    border-radius: 10px;
+    animation: 0.5s;
+  }
+  .MenuSesion {
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: 0.5s;
+  }
+  .BotonBusqueda {
+    border: 3px solid #f9eae1;
+    color: #f9eae1;
+    background-color: #80004a;
+    border-radius: 10px;
+    width: 20%;
+    height: max(6vh, 40px);
+    cursor: pointer;
+    animation: 0.5s;
+  }
+  .LogoIPN {
+    margin: 5px;
+    width: 55px;
+    cursor: pointer;
+  }
+  #Escondido {
+    display: none;
+  }
+  @media (max-width: 1100px) {
+    .MenuAsesorias,
+    .MenuProyectos,
+    .MenuEjercicios {
+      display: none;
+    }
+    .MenuEscondido {
+      font-size: 70px;
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 0;
+    }
+    .ContenidoEscondido {
+      font-size: 16px;
+      position: absolute;
+      right: 0px;
+      top: 55px;
+    }
+    .BarraBusqueda {
+      left: 25vw;
+    }
+    .MenuSesion {
+      right: 100px;
+    }
+    .MenuSesion:hover .ContenidoSesion {
+      right: 0;
+      top: 55px;
+      animation: 0.5s;
+    }
+  }
+  @media (max-width: 750px) {
+    .MenuSesion {
+      display: none;
+    }
+    #Escondido {
+      display: flex;
+    }
+    .BarraBusqueda {
+      left: 100px;
+    }
+  }
+  #contador {
+    background-color: #80004a;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    color: #f9eae1;
+    font-size: 20px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .asig {
+    background-color: #80004a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+
+.card-img {
+    flex: 0 0 200px;
+    margin-right: 20px;
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background-color: #80004a;
+    border-color: #80004a;
+    margin-right: 5px;
+}
+
+.btn-danger {
+    background-color: #80004a;
+    border-color: #80004a;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    background-color: #660041;
+    border-color: #660041;
+}
+  
