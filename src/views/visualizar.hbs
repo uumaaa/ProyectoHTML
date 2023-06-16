@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/contenido-cursos-estilo.css" />
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <title>Videito</title>
+  </head>
+
+  <body>
+
+</div>
+    <div class="ContenedorVideo">
+    <p class="TituloVideo">{{datos.titulo}}</p>
+      <video src="/uploads/{{datos.foto}}" controls class="videito current-image" alt="Este no es: {{foto}}">
+
+    </div>
+    <div class="MostrarTemario">
+      <p>Descripcion</p>
+      <div class="IntermedioBotones">
+        <div id="BotonFalsoTemario"></div>
+        <button id="BotonMostrarTemario" onclick="OcultarTemario()"></button>
+        <button id="BotonNoMostrarTemario" onclick="MostrarTemario()"></button>
+      </div>
+    </div>
+    <article class="Temario" id="Temario">
+      <section id="ecuaciones">
+        <p>
+            {{datos.descripcion}}
+        </p>
+      </section>
+    </article>
+   
+    <footer class="CreditosRojo">
+      <p>3 de marzo de 2023.</p>
+      <p>© Todos los derechos reservados.</p>
+    </footer>
+    <script src="/scripts/script-temario-tip.js"></script>
+  </body>
+</html>

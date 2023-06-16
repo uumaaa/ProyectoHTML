@@ -76,6 +76,28 @@ const TaskController = {
     });
   },
 
+  visualizarDatos: (req, res) => {
+    const id = req.params.id;
+    req.getConnection((error, connection) => {
+      if (error) {
+        console.error('Error al obtener la conexión a la base de datos:', error);
+        return;
+      }
+
+
+      const query = `SELECT * FROM subir WHERE id = ?`;
+      connection.query(query, [id], (err, results) => {
+        if (err) {
+          console.error('Error al obtener los datos de la base de datos:', err);
+          return; 
+        }
+
+        res.render('visualizar', {datos: results[0] });
+      });
+    });
+  },
+
+
 
   editarRegistro: (req, res) => {
     const id = req.params.id;
@@ -91,7 +113,6 @@ const TaskController = {
           console.error('Error al obtener los datos de la base de datos:', err);
           return;
         }
-
         res.render('editar', { datos: results[0] });
       });
     });

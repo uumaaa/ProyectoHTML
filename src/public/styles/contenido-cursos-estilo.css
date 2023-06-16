@@ -1,0 +1,228 @@
+body{
+    overflow: hidden;
+}
+.videito {
+    width: 90%;
+    position: relative;
+    padding: auto;
+    top: 3%;
+    left: 5%;
+    border-radius: 20px;
+}
+.ContenedorVideo{
+    background-color: #80004a;
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.664);
+}
+.Canal {
+    position: relative;
+    top: 2%;
+    left: 50px;
+    width: 10%;
+    border-radius: 20px;
+    display: inline;
+}
+.NombreCanal{
+    position: relative;
+    top:-50px;
+    left: 150px;
+    font-family: "PoppinsBold";
+    color: #F9EAE1;
+}
+.ContenedorVideo .TituloVideo 
+{
+    position: relative;
+    color: #F9EAE1;
+    top: 13px;
+    left: 50px;
+    font-size: 28px;
+    font-family: "PoppinsBold";
+}
+.Temario {
+    background-color: #FF5A5F;
+    position: absolute;
+    top: 15%;
+    width: 27.5%;
+    height: 240px;
+    overflow: auto;
+    right: 2.5%;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: none;
+}
+
+.Mejorar {
+    position: absolute;
+    top: 22%;
+    width: 27.5%;
+    right: 2.5%;
+    height: 240px;
+    background-color: #8075FF;
+    overflow: auto;
+    border-radius: 20px;
+    display: none;
+    transition: 0.5s;
+}
+
+.MostrarTemario {
+    top: 15%;   
+    position: absolute;
+    right: 2.5%;
+    background-color: #FF5A5F;
+    height: 40px;
+    width: 27.5%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.Mejorar ul {
+    list-style: none;
+}
+
+.MostrarTemario p,
+.Temario p,
+.Temario h2,
+.Temario h3,
+.MostrarMejora p,
+.Mejorar li,
+.Mejorar h2,
+.Mejorar h3 {
+    color: #F9EAE1;
+    padding: 0 5%;
+}
+
+.MostrarTemario p,
+.MostrarMejora p {
+    font-family: "PoppinsBold";
+    position: relative;
+    top: 13%;
+    left: 20%;
+}
+
+#BotonMostrarTemario {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -42px;
+    right: -7px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#BotonNoMostrarTemario {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    top: -42px;
+    position: relative;
+    cursor: pointer;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#BotonFalsoTemario {
+    background-color: #80004a;
+    border: 2px solid #80004a;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    top: -7px;
+    right: -7px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.MostrarMejora {
+    position: absolute;
+    right: 2.5%;
+    background-color: #8075FF;
+    height: 40px;
+    width: 27.5%;
+    top: 16%;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.IntermedioBotones {
+    margin-top: 6px;
+    position: relative;
+    left: 65%;
+    top: -50%;
+    border-radius: 10px;
+    width: 80px;
+    align-content: center;
+    height: 20px;
+    background-color: #F9EAE1;
+}
+
+#BotonMostrarMejora {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -42px;
+    right: -7px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#BotonNoMostrarMejora {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    top: -42px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#BotonFalsoMejora {
+    background-color: #80004a;
+    border: 2px solid #80004a;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    top: -7px;
+    right: -7px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+}
+.Extras {
+ position: relative;
+ top:-135px;
+ right: 80px;
+ font-size: 18px;
+ color: #F9EAE1;
+ text-align: right;
+}
+
+.Creditos{
+    font-size: 15px;
+    text-align: right;
+    color: #F9EAE1;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .CreditosRojo{
+    font-size: 15px;
+    text-align: right;
+   color: #80004a;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }

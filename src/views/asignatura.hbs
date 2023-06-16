@@ -5,23 +5,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/script.js"></script>
 
-    <script>
-        function formatAsignatura(asignatura) {
-            var palabras = asignatura.split('_');
-            var formateado = palabras.map(function (palabra) {
-                return palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase();
-            });
-            return formateado.join(' ');
-        }
-
-        window.onload = function () {
-            var asignaturaElement = document.querySelector('.asig');
-            asignaturaElement.textContent = formatAsignatura(asignaturaElement.textContent);
-        };
-    </script>
 </head>
-
 <body>
     <h1 class="asig">{{asignatura}}</h1>
     {{#each datos}}
@@ -39,7 +25,7 @@
                 </form>
             </div>
         </div>
-        <video src="/uploads/{{foto}}"  class="card-img"  alt="este no es:{{foto}}" ></video>
+        <a href="/{{asignatura}}/visualizar/{{id}}"><video src="/uploads/{{foto}}"  class="card-img"  alt="este no es:{{foto}}" width="150px" height="150px"></video></a>
     </div>
     {{/each}}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
